@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单控件</title>
+</head>
+
+<body>
+<form action="#" method="get" id="user_form">
+<!--form构建表单域;没有后台用井号替代;默认提交方式get-->
+	
+<!--提示信息<表单控件>-->
+	
+	<!--autofocus自动获取焦点-->
+	邮箱：<input type="email" name="formmail" autofocus/><br/>
+	
+	网址：<input type="url" name="user_url"/><br/>
+	
+	网址（带Datalist数据列表）: 
+	<input type="url" list="url_list" name="weburl"/>
+	<datalist id="url_list"><!--匹配id-->
+		<option label="新浪" value="http://www.sina.com.cn"></option>
+		<option label="搜狐" value="http://www.sohu.com"></option>
+		<option label="传智" value="http://www.itcast.cn"></option>
+	</datalist><br/><br>
+	
+	电话（正则表达式）：<input type="tel" name="tel" pattern="^\d(11)$"><br/>
+	<!--pattern正则表达式^\d(11)$（数字，允许11位字节）-->
+	<!--https://www.runoob.com/regexp/regexp-intro.html-->
+	<!--^[a-zA-Z][a-zA-Z0-9_]{4,15}$以字母开头，长度5-16，允许字母数字下划线-->
+	<!--^[a-zA-Z]\w{5,17}$......只能包含字母和下划线-->
+	
+		
+	搜索框<input type="searchinfo" name="search"/><br>
+	<!--根据开发者命名习惯，只要type类型和后台接受一致即可-->
+	颜色：<input type="color" name="color1" value="#FF00FF"/><input type="color" name="color2" value="red"/><input type="submit"/><br/>
+	数值：<input type="number" value="1" min="1" max="20" step="2"/><br/>
+	
+	滑动条<input type="range" value="1" min="1" max="20" step="1"/><br/><br/>
+	
+	Date：<input type="date"/><br/>
+	Month: <input type="month"/><br/>
+	Week：<input type="week"/><br/>
+	Time: <input type="time"/><br/>
+	Datetime: <input type="datetime"/><br/>
+	Datetime-local: <input type="datetime-local"><br/><br>
+	
+	multiple属性（同时上传多个邮箱或文件）	<input type="email" multiple/><input type="file" multiple/><br><br>
+	
+	账号<input type="text" pattern="^[a-zA-Z][a-zA-Z0-9_]{4,15}$">(以字母开头，长度5-16，允许字母数字下划线) <br>
+	密码<input type="text" pattern="^[a-zA-Z]\w{5,17}$">(以字母开头，长度6-18，只能包含字母和下划线) <br>
+	身份证号 <input type="text" pattern="^\d{15}|\d{18}$">(15或18位数字) <br>
+	Email地址 <input type="text" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"> <input type="submit">(字母数字@字母数字.字母数字) <br><br>
+	
+	带placeholder占位符 属性（提示信息） <input type="text" pattern="^[0-9]{5}$" placeholder="请输入6位数的邮政信息"><br>
+	required属性（该字段不能为空） <input type="text" required><br><br>
+	
+	----
+	
+	多行文本输入框： <br> <textarea cols="30" rows="8">这是默认内容，cols为行，rows为列，也可设置为只读</textarea> <br>
+	
+	下拉菜单： 
+	单选
+	<select>
+		<option selected="selected">选项1</option> <!--默认选项-->
+		<option>选项2</option>
+		<option>选项3</option>
+	</select><br>
+	多选
+	<select multiple="multiple" size="3">
+		<option>唱歌</option>
+		<option selected="selected">画画</option><!--默认选项-->
+		<option selected="selected">跳舞</option><!--默认选项-->
+		<option>写字</option>
+	</select><br>
+	选项分组
+	<select name="" id="">
+
+		<optgroup label="北京"><!--组名-->
+			<option>东城区</option>
+			<option>西城区</option>
+			<option>朝阳区</option>
+			<option>海淀区</option>
+		</optgroup>
+	</select><br>
+	
+	
+	
+</form>
+	
+下面的框再form元素外，但因为指定了form属性为表单id，所以该输入框仍然属于表单的一部分（H5之前不行）
+<!--只需要属性值是id名即可-->
+<input type="text" name="last_name" form="user_form"><br/>
+	
+</body>
+</html>

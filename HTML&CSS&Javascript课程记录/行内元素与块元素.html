@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>纵向导航栏-行内元素与块元素</title>
+<!--课本p92实例-->
+<style>
+	body{background-color: #fffae8;}
+	
+	nav{
+    	width: 250px;
+    	border-width: 2px;
+		border-style: dotted;
+		border-color: #aaaa7f;
+    	border-radius: 4px;
+    	background-color: #fffcef;
+	}
+	
+	nav h1{
+		margin: 0;
+		padding: 15px 0 0 0;
+		color:#ffffff;
+		text-align: center;
+		border: 2px;
+		border-style:  solid;
+		border-color: #6a6a4f;
+		background-color: #A5A27F;
+	}
+	
+	#nav_a a{
+		display: block;/*块元素-独占整行*/
+		margin: 0 auto;
+		padding: 10px 0 0 0;
+		color: #5d5d5d;
+		text-align: center;
+		text-decoration: none;
+		border: 1px;
+		border-style: dotted;
+		border-color: #5D5D5D;
+	}
+	
+	#nav_a a:last-child{/*选择nav_a最后一个标记*/
+		border-style: none;
+	}
+	
+	#nav_a a:hover{background-color: #ffffdb;}/*链接伪类选择器*/
+</style>
+
+
+</head>
+
+<body>
+	<nav>
+		<h1>快速访问</h1>
+		<div id="nav_a">
+			<a href="#">HTML5简介</a>
+			<a href="#">HTML5基础</a>
+			<a href="#">HTML5元素</a>
+			<a href="#">HTML5属性</a>
+			<a href="#">HTML5标题</a>
+			<a href="#">HTML5段落</a>
+			<a href="#">HTML5图像</a>
+			<a href="#">HTML5背景</a>
+			<a href="#">HTML5列表</a>
+			<a href="#">HTML5链接</a>
+		</div>
+	</nav>
+</body>
+</html>
