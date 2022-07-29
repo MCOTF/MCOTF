@@ -1,38 +1,28 @@
-# Java课程代码
+# 各学科课程代码 By-MCOTF__ST(计一shi/Smotrit/二三三的石头)
 
 #### 介绍
-本仓库用来记录在java课程中学习的代码，供各位参考并学习
-如有疑问可提交Issue，切勿向QQ或微信提问，否则一概不回。
+1.	本仓库用来记录在各学科课程中学习的代码，供各位参考并学习。	
+2.	如有需要可收藏此页，之后的代码会在此持续更新。
+3.	如有疑问请提交Issue，切勿向QQ或微信提问，否则一概不回。
 
-#### 软件架构
-软件架构说明
+#### 本仓库内容
 
+1.	Java:涵盖了java的一些基础代码，从HelloWorld到构造方法均有案例代码。
+2.	SQL:以SSMS平台编写的适用于SQL Server的查询代码，理论也可在MySQL等平台使用
+3.	HTML/CSS:通常为各种HTML实例，一般会有部分行内式与内嵌式CSS代码，后期会跟进Javascript。
 
-#### 安装教程
+#### 软件安装(待定)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  Java IDE:
+2.  Python IDE:
+3.  SSMS:
+4.	Dreamweaver:
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  请遵守MIT开源协议
+2.  建这玩意的目的与初衷就是减少我被询问的量，因为我不喜欢回答问题，一般每个代码都会写相当详细的注释。
 
-#### 参与贡献
+#### 参与贡献（待定）
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.  因为没有估计以后也不会有所以懒得写了
