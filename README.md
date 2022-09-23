@@ -16,13 +16,16 @@
 1.  Java IDE:
 2.  Python IDE:
 3.  SSMS:
-4.	Dreamweaver:
+4.	HbuilderX:
 
 #### 使用说明
 
-1.  请遵守MIT开源协议
+1.  请遵守MIT开源协议。
 2.  建这玩意的目的与初衷就是减少我被询问的量，因为我不喜欢回答问题，一般每个代码都会写相当详细的注释。
+3.  我没有手把手教的义务，又不是你对象。
 
 #### 参与贡献（待定）
 
 1.  因为没有估计以后也不会有所以懒得写了
+
+![图](https://i0.hdslb.com/bfs/album/8c1f9ad25e4b85ddb18e42a25013d4feeb66ae12.jpg)
