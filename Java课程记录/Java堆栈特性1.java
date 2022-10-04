@@ -1,3 +1,5 @@
+import com.MCOTF.Student;
+
 public class Java堆栈特性1 {
     public static void main(String[] args) {
         Student stu1 = new Student();//建立栈内存，并使用new开辟堆内存的空间

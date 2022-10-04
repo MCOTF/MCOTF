@@ -20,6 +20,7 @@
 #### 软件下载
 
 -   [Java Development Kit 8(JDK8)](https://www.oracle.com/java/technologies/downloads/#java8)
+-   [Eclipse](https://www.eclipse.org/downloads/)
 -   [Python IDE](https://www.python.org/downloads/)
 -   [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 -   [HbuilderX](https://dcloud.io/hbuilderx.html)
