@@ -14,9 +14,19 @@
 			
 			// 2.同时声明多个变量时（var简化）
 			var b=2,c=3,d=4;//声明b，c，d三个变量
-			document.write(a,b,c,d);同时打印
+			document.write(a,b,c,d);//同时打印
 			
+			// 3.不赋值或不声明
+			//只声明，不赋值
+			var e;
+			console.log(e);//undefined（未定义）
 			
+			//不声明，不赋值
+			//console.log(f);//Uncaught ReferenceError: f is not defined（报错）
+			
+			//不声明，只赋值
+			g=6;//不标var，g会变为全局变量
+			document.write(g);//正常输出，但不推荐
 		</script>
 	</body>
 </html>
