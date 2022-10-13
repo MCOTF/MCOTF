@@ -44,6 +44,35 @@
 				rightHead=temp;//第三步（最终）
 				console.log("最终状态 ：",leftHead,rightHead,temp);
 				
+			//数据类型
+				//基本数据类型(原始值)--字符串(String);数值(Number);布尔(Boolean);空(null);未定义(undefined);symbol
+				//引用数据类型(引用值)--对象(Object)
+				
+				var num;//不加等号赋值，目前不确定是那种类型
+				console.log(typeof num);//检查数据类型（未定义(undefined)）
+				
+				//js的变量数据类型根据等号右边的值来确定，js是动态的语言，变量类型可以变化
+				var num=10;
+				console.log(typeof num);//数值(Number)
+				
+				var num="你好";
+				console.log(typeof num);//字符串(String)
+				
+				//1.数值型（数字）：整数、小数
+				//数值型常用：二进制，八进制，十进制，十六进制
+				var num=10;
+				var Pi=3.14;
+				//2进制（0，1）：
+				
+				//8进制（0-7）：数字前面加0为八进制
+				console.log(010);//实际是8
+				console.log(012);//实际是10
+				
+				//16进制（0-9,a-f）:数字前面加0x为十六进制
+				console.log(0x9);//实际是9
+				console.log(0xf);//实际是15
+				
+				
 		</script>
 	</body>
 </html>
