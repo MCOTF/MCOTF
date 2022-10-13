@@ -58,7 +58,7 @@
 				var num="你好";
 				console.log(typeof num);//字符串(String)
 				
-				//1.数值型（数字）：整数、小数
+				//1.数值型（数字）：整数、小数；
 				//数值型常用：二进制，八进制，十进制，十六进制
 				var num=10;
 				var Pi=3.14;
@@ -71,8 +71,19 @@
 				//16进制（0-9,a-f）:数字前面加0x为十六进制
 				console.log(0x9);//实际是9
 				console.log(0xf);//实际是15
+					
+				//数字型范围Number.MAX_VALUE、Number.MIN_VALUE
+				console.log(Number.MAX_VALUE);//数字型最大值
+				console.log(Number.MIN_VALUE);//数字型最小值
+				console.log(Number.MAX_VALUE*2);//无穷大（Infinity）
+				console.log(Number.MIN_VALUE/2);//负无穷（-Infinity）
 				
+				//NaN
+				console.log('pink老师'-100)//NaN（not a number）：返回值不会报错，-100不会运行，故得不到结果
+				console.log(isNaN(1));//false（isNaN用来判断是否为“非数字”，并且会返回一个布尔值）
+				console.log(isNaN("String"));//true（is not a number（非数字））
 				
+				//2.字符串 string：""或''
 		</script>
 	</body>
 </html>
