@@ -38,12 +38,11 @@
 				var temp;//建立临时变量temp
 				
 				temp=leftHead;//第一步
-				document.write("第一步状态：",leftHead,rightHead,temp);
+				console.log("第一步状态：",leftHead,rightHead,temp,"\n");//控制台输出，及时查看步骤
 				leftHead=rightHead;//第二步
-				document.write("第二步状态：",leftHead,rightHead,temp);
+				console.log("第二步状态：",leftHead,rightHead,temp,"\n");
 				rightHead=temp;//第三步（最终）
-				console.log("最终状态：",leftHead,rightHead,temp);
-				
+				console.log("最终状态 ：",leftHead,rightHead,temp);
 				
 		</script>
 	</body>
