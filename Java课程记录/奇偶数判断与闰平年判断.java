@@ -1,4 +1,3 @@
-package com.MCOTF;
 import java.util.Scanner;//引入工具类
 public class 奇偶数判断与闰平年判断 {
 	public static void main(String[] args) {

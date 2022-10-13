@@ -1,5 +1,3 @@
-package com.MCOTF;
-
 public class 数组_学生成绩 {
 	public static void main(String[] args) {
 		int[] score= {72,89,65,58,87,91,53,82,71,93,76,68};

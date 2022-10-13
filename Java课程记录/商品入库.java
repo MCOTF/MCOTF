@@ -1,4 +1,3 @@
-package com.MCOTF;
 import java.util.Scanner;
 public class ÉÌÆ·Èë¿â {
 	public static void main(String[] args) {

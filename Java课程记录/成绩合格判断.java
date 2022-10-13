@@ -1,4 +1,3 @@
-package com.MCOTF;
 import java.util.Scanner;//引入工具类
 public class 成绩合格判断 {
 	public static void main(String[] args) {//入口函数main

@@ -1,5 +1,3 @@
-package com.MCOTF;
-
 public class 复习 {
 	
 	/**快速封装，快速构建

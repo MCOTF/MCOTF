@@ -1,5 +1,3 @@
-package com.MCOTF;
-
 public class 复习_构造方法 {
 	public static void main(String[] args) {
 		//构造初始值(姓名，年龄，学号)

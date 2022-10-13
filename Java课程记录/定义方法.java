@@ -1,5 +1,3 @@
-package com.MCOTF;
-
 public class 定义方法 {
 	public static void main(String[] args) {
 	//入口函数

@@ -28,6 +28,8 @@
 #### 推荐教程
 -	[菜鸟教程](https://www.runoob.com/)
 -	[233](https://space.bilibili.com/19200133)
+-	[安装并使用eclipse](https://zhuanlan.zhihu.com/p/146333721)
+-	[安装并使用hbuilderx](https://zhuanlan.zhihu.com/p/131649354)
 
 #### 使用说明
 

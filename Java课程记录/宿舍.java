@@ -1,5 +1,3 @@
-package com.MCOTF;
-
 public class ËŞÉá {
 	public static void main(String[] args) {
 		//ËŞÉáÑ§ÉúÄêÁä

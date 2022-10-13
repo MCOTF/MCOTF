@@ -1,5 +1,3 @@
-package com.MCOTF;
-
 public class 二维数组 {
 	public static void main(String[] args) {
 		//二维数组是特殊的一维数组，特殊的数组中每一个元素是一维数组

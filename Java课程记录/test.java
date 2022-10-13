@@ -1,5 +1,3 @@
-package com.MCOTF;
-
 public class test {
 	 public static void main(String args[]) {
 		 int count=0;

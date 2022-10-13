@@ -1,5 +1,3 @@
-package com.MCOTF;
-
 public class 数组 {
 	public static void main(String[] args) {
 /**1.声明2.创建3.赋值4.访问
@@ -8,7 +6,6 @@ public class 数组 {
 		*/
 		
 		int []age;//声明(告诉内存空间)
-		
 		//创建数组但不赋值的话为默认值，0-99个下标对应的值都为0
 		age =new int[100];//创建(分配内存空间)new 数据类型[]长度
 		
