@@ -28,7 +28,46 @@
 				console.log("12"+"12");//数字与数字相加，返回值仍然是数字型：1212
 				console.log("pink老师"+true);//pink老师true（true属于黑色，故为字符串类型）
 				
+			// JS转义字符：
+				// 换行：\n newline
+				//  \\ \' \" 
+				// 缩进\t
+				// 空格\b
+				// 
 				
+			//布尔类型 true false
+				var flag = true;
+				console.log(flag+1);
+				var flag2 = false;
+				console.log(false+1);
+			
+			//未被定义 undefined
+				var num2;//
+				console.log(num2);
+				
+			//空 null
+				var space = null;
+				console.log(space + 1);
+				
+			//获取变量类型 typeof (检测)
+				var num3=0;
+				var str3="0";
+				console.log(typeof num3);//number
+				console.log(typeof str3);//string
+				
+				//判断数据类型
+				prompt("");
+				alert("")
+				
+			//练习1：计算年龄
+				var age6=prompt("请输入你的出生年份");
+				var age7=2022-age6;//这里偷懒了，可以靠getFullYear获取年份
+				alert("您的年龄是:"+age7+"岁");
+			//练习2：简单加法器
+				var input1=Number(prompt("请输入第一个值"));//prompt默认为string，故强制转换为Number型，否则会以string输出
+				var input2=Number(prompt("请输入第二个值"));
+				var sum1= Number(input1+input2)//强制转换
+				alert("结果为："+sum1);
 		</script>
 	</body>
 </html>
