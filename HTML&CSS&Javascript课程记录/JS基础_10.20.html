@@ -14,7 +14,7 @@
 				
 				//语句嵌套
 				var str1='我是一个"高富帅"程序员';//一个语句里只能出现一次双引号，如果需要同时出现就“外双内单”或“外单内双”
-				console.log(str1);
+				console.log(str1);//我是一个"高富帅"程序员
 				
 				//变量长度显示
 				var str2="my name is Andy";//字符串长度为15，包含空格
@@ -22,11 +22,12 @@
 				
 				//字符串连接符
 				console.log("沙漠"+"骆驼");//拼接"+"
-				
+				//在字符串后面+任何类型=拼接后的新字符串
 				console.log("pink老师"+18);//pink老师18
 				console.log(12+12);//24
-				console.log("12"+"12");//1212
-				console.log("pink老师"+true);//pink老师true
+				console.log("12"+"12");//数字与数字相加，返回值仍然是数字型：1212
+				console.log("pink老师"+true);//pink老师true（true属于黑色，故为字符串类型）
+				
 		</script>
 	</body>
 </html>
