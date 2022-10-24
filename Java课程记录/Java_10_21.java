@@ -12,15 +12,18 @@ public class Java_10_21 {
             int score = input.nextInt();//循环输入
             if (score == 0){
                 a++;
+                System.out.println("感谢您的投票");
             }
             else if (score == 1) {
                 b++;
+                System.out.println("感谢您的投票");
             }
             else {
                 System.out.println("您输入的委员编号错误");
                 picket--;//若输入错误，票数序号重置
             }
         }
+        System.out.println("");
         if (a>b){
             System.out.println("委员a票更多");
         }
