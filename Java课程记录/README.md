@@ -1,7 +1,7 @@
 ## [各学科课程代码 By-MCOTF__ST(计1S/Smotrit)](https://space.bilibili.com/19200133)
 
 <p align="center">
-<img src="SQL查询课程记录/MCOTF-01.png"/> 
+<img src="course-code/SQL查询课程记录/MCOTF-01.png"/> 
 </p>
 
 ```使用方法：文件-导入-从Git导入，或者你直接复制代码也行。我不管，不会自己查百度。```
