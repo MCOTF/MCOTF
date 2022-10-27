@@ -59,6 +59,43 @@
 				console.log(typeof String(PI));//第二种
 				var piStr = PI + "";
 				console.log(typeof piStr);//第三种
+				
+			//二、转换为整数型int/浮点型float
+				
+				//1.取整 parseInt(变量);
+				//前提：变量不能是数值型，不然就没用了
+				console.log(parseInt("3.14"));//蓝色3 (number)
+				//测试类型
+				var num3 = parseInt("3.14");
+				console.log(typeof num3);//number
+				
+				console.log(parseInt("3.94"));//还是3，结果直接取整
+				console.log(parseInt("120px"));//120 只有120是数字
+				console.log(parseInt("-18"));//-18 
+				
+				//2.取浮点 parseFloat(变量);
+				console.log(parseFloat("3.14"));
+				console.log(parseFloat("120px"));//因为是number类型，所以不是120.0
+				console.log(parseFloat("rem120"));//not a Number(读到第一个的内容不是数字)
+				console.log(parseFloat("-18")); 
+				
+				//3.强制转换 Number(变量);
+				var str4 = "123";
+				console.log(Number(str4));//蓝色123 (number)
+				console.log(typeof Number(str4));//number
+				console.log(typeof Number("123"));//number
+				
+				//4.利用算数运算: +-*/ 隐式运算
+				console.log("120"-0);//120(number)最常用的方式
+				console.log(false-1);//-1(number)
+				console.log("120"-false);//120(number)
+				console.log("120"+false);//120false(String)
+				console.log("123"+"120");//123120(String)
+				console.log("123"+4);//字符串型+其他类型的任何结果均为字符串，故结果为1234(String)
+				console.log(4+"123");
+				console.log("123"-"120");//3(number)
+				console.log(""*"");//0
+				
 		</script>
 	</body>
 </html>
