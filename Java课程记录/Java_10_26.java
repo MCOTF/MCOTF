@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Student_1026 {
-    //属性：名字与票数
+    //委员
     String name;
     int ticket = 0;
 

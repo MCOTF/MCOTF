@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //公共父类
 class animal{
     //成员变量-属性
@@ -9,7 +11,7 @@ class animal{
     public animal (String name,int age){
         this.name = name;
         this.age = age;
-        this.grade = grade;
+//        this.grade = grade;//变量已有给定值
     }
     //行为
     public void hurt (){
@@ -18,7 +20,7 @@ class animal{
     public void eat(){
         System.out.println("正在吃");
     }
-    public void introduction() {
+    public void jieshao() {
         System.out.println("大家好！我是" + name + "我今年" + name + "岁了.");
     }
 }
@@ -57,7 +59,12 @@ public class Java_10_23{//10.23自习java
         System.out.println(dog1.name);
         System.out.println(dog1.age);
         System.out.println(dog1.grade);
-        System.out.println(dog2.grade);
-
+        System.out.println(Arrays.deepToString(dog2.grade));//表达式包装
+        for (int i = 0; i < dog1.grade.length; i++) {
+            for (int j = 0;j < dog1.grade[i].length;j++) {
+                System.out.print(dog1.grade[i][j]);
+            }
+            System.out.println();
+        }
     }
 }
