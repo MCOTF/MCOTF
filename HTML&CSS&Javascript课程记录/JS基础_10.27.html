@@ -10,12 +10,21 @@
 			// 1转字符串 2转数字 3转布尔
 			
 			// 1 toString（）-变量.toString()（变量放在前面，括号是空的）
-			var a = 1;
-			console.log(a);//1(number)
-			console.log(a.toString());//1(String)
-			console.log(typeof a);//number
-			//只有当toString，才会临时变为string类型
-			console.log(typeof a.toString());//String
+			
+				//数字型转字符串
+				var a = 1;
+				console.log(a);//1(number)
+				console.log(a.toString());//1(String)
+				console.log(typeof a);//number
+				//只有当toString，才会临时变为string类型
+				console.log(typeof a.toString());//String
+			
+				//布尔类型转字符串
+				var flag = true;
+				console.log(flag);//true(boolean)
+				console.log(flag.toString());//true(String)
+				console.log(typeof flag);//boolean
+				console.log(typeof flag.toString());//String
 			
 			//
 			
