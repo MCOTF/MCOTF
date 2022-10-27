@@ -9,7 +9,7 @@
 			// 数据类型转换
 			// 1转字符串 2转数字 3转布尔
 			
-			// 1 toString（）-变量.toString()（变量放在前面，括号是空的）
+			// 1:临时转换 toString()-变量.toString()（变量放在前面，括号是空的）
 			
 				//数字型转字符串
 				var a = 1;
@@ -18,16 +18,30 @@
 				console.log(typeof a);//number
 				//只有当toString，才会临时变为string类型
 				console.log(typeof a.toString());//String
+				var str0 = a.toString();//保留转换后的变量
+				console.log(typeof str0);//String
 			
 				//布尔类型转字符串
-				var flag = true;
-				console.log(flag);//蓝色的true(boolean)
-				console.log(flag.toString());//黑色的true(String)
+				var flag1 = true;
+				console.log(flag1);//蓝色的true(boolean)
+				console.log(flag1.toString());//黑色的true(String)
 				//类型检测
-				console.log(typeof flag);//boolean
-				console.log(typeof flag.toString());//String
+				console.log(typeof flag1);//boolean
+				console.log(typeof flag1.toString());//String
 			
-			//
+			//2:强制转换 String()-String(变量)（数据类型在前，括号内放变量）
+				
+				//数字型转字符串
+				var b = 2;
+				console.log(String(b));//黑色2(String)
+				var str1 = String (b);//保留转换后的变量
+				console.log(typeof str1);//String
+				
+				//布尔类型转字符串
+				var flag2 = false;
+				console.log(String(flag2));//黑色2(String)
+				var str2 = String (flag2);
+				console.log(typeof str2);//黑色2(String)
 			
 		</script>
 	</body>
