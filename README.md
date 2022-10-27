@@ -1,4 +1,4 @@
-## [各学科课程代码 By-MCOTF__ST(计1S/Smotrit)](https://space.bilibili.com/19200133)
+## [各学科课程代码 By-MCOTF__ST(计1S/Smotrit)](https://gitee.com/MCOTF/course-code)
 
 <p align="center">
 <img src="SQL查询课程记录/MCOTF-01.png"/> 
@@ -9,7 +9,7 @@
 #### 介绍
 -	本仓库用来记录在各学科课程中学习的代码，供大伙参考学习，一起进步。	
 -	如有需要可收藏此页，之后的代码会在此持续更新。
--	如有疑问请提交Issue，切勿向QQ或微信提问，否则一概不回。
+-	商业合作请直接联系我。如有其他疑问则提交Issue，非商业合作切勿向QQ或微信提问，任何干扰我时间的行为一概不回。
 
 #### 本仓库内容
 
@@ -26,17 +26,18 @@
 -   [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 -   [HbuilderX](https://dcloud.io/hbuilderx.html)
 
-#### 推荐教程
+#### 推荐链接
+-	[我的B站主页](https://space.bilibili.com/19200133)
+-	[我的爱发电主页](https://afdian.net/a/mcotf)
 -	[菜鸟教程](https://www.runoob.com/)
--	[233](https://space.bilibili.com/19200133)
 -	[安装并使用eclipse](https://zhuanlan.zhihu.com/p/146333721)
 -	[安装并使用hbuilderx](https://zhuanlan.zhihu.com/p/131649354)
 
 #### 使用说明
 
 1.  请遵守MIT开源协议。
-2.  建这玩意的目的与初衷就是减少我被询问的量，因为我不喜欢回答问题，一般每个代码都会写相当详细的注释。
-3.  我没有手把手教的义务，又不是你对象。
+2.  建这玩意的目的与初衷就是减少我被询问的量，因为我不喜欢回答问题，一般都会写相当详细的注释。
+3.  我没有手把手教的义务，别再问什么压缩包怎么解压，软件怎么安装了，这种玩意百度就有一大堆教程。
 
 #### 参与贡献（待定）
 
