@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="idea test">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java课程记录/Java_10_27.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_10_27.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java课程记录/早期内容/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/早期内容/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java课程记录/早期内容/冒泡排序.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/早期内容/冒泡排序.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager">
@@ -60,7 +52,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667392599988</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="代码能跑了，人不用跑了">
+      <created>1667393171699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667393171699</updated>
+    </task>
+    <task id="LOCAL-00003" summary="idea test">
+      <created>1667393188235</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667393188235</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,6 +81,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="代码能跑了，人不用跑了" />
     <MESSAGE value="idea test" />
     <option name="LAST_COMMIT_MESSAGE" value="idea test" />
   </component>
