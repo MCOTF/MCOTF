@@ -26,7 +26,7 @@
 4.在类中定义的变量为成员变量；在方法内定义的变量为局部变量，在方法执行完毕后就销毁。
 四、*/
 
-//计算机一班石敬毅，内容已上传到gitee中（https://gitee.com/MCOTF/course-code/blob/master/Java%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/Java_10_28.java）
+//计1S，内容已上传到gitee中（https://gitee.com/MCOTF/course-code/blob/master/Java%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/Java_10_28.java）
 class student1028{
 
     //题目有get部分，并且并不需要继承，故成员变量使用private和final关键字标注
@@ -47,19 +47,19 @@ class student1028{
 
     //getter方法
     public String getsNO() {
-        System.out.printf("学号："+this.sNO);
+//        System.out.printf("学号："+this.sNO);
         return sNO;
     }
     public String getsName() {
-        System.out.printf("姓名："+this.sName);
+//        System.out.printf("姓名："+this.sName);
         return sName;
     }
     public String getsSex() {
-        System.out.printf("性别："+this.sSex);
+//        System.out.printf("性别："+this.sSex);
         return sSex;
     }
     public int getsAge() {
-        System.out.printf("年龄："+this.sAge);
+//        System.out.printf("年龄："+this.sAge);
         return sAge;
     }
     public double getsJava() {
@@ -69,7 +69,8 @@ class student1028{
 
     //学生信息输出
     public void print(){
-        System.out.println("学号："+getsNO()+"，姓名："+getsName()+"，性别："+getsSex()+"，年龄："+getsAge()+"，Java课程成绩："+this.sJava);
+//        System.out.println("学号："+getsNO()+"，姓名："+getsName()+"，性别："+getsSex()+"，年龄："+getsAge()+"，Java课程成绩："+this.sJava);
+        System.out.println("学号："+this.sNO+"，姓名："+this.sName+"，性别："+this.sSex+"，年龄："+this.sAge+"，Java课程成绩："+this.sJava);
     }
 }
 public class Java_10_28 {
@@ -134,3 +135,19 @@ public class Java_10_28 {
         }
     }
 }
+/*
+⠀⠀⠀⣀⣤⣤⣶⣾⣿⠉⠉⠉⠉⢻⣶⣦⣤⣀
+⡤⠒⠁⠀⢼⣿⣿⣿⣿⡆⠀⠀⠀⢸⣿⣿⣿⣧⠈⠓⠦⣄
+⠀⠀⠀⠀⠸⠿⠛⠛⠋⣰⣿⣿⣿⣿⠉⠛⠛⠛⠀⠀⠀⠀⠀⠉⠲⢤
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⠈⠁⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣶⣾⣶⣿⢿⣧⣀⠀⠀⠀⠀⠀⠀⠀⢀⠃
+⠀⠀⠀⣀⣤⣶⣿⣿⠟⠘⣿⣿⣿⡏⠀⠻⣿⣻⢿⣦⣀⠀⠀⢀⠋
+⣀⣴⣿⣿⣿⣿⣿⠉⠀⠀⢿⣿⣿⠀⠀⠉⢻⣿⣿⣿⣿⡿⢀⠋
+⣿⣿⣿⣿⣿⣥⠃⠀⡆⠀⠘⠛⠀⠀⠀⣷⠀⣧⢿⣿⣿⣇⡏
+⣿⣿⣿⣿⣿⣿⠀⠀⣿⠀⠀⠀⠀⠀⠀⢸⠀⠀⢿⣿⣿⣿⡀
+⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣦⡀
+⠉⢿⣿⣿⣿⣧⠀⠀⠀⠀⢰⠀⠉⠀⠀⠀⣀⣴⣿⣿⣿⡟⠉⠉⠉⠉
+⠤⣀⢿⣿⣿⣿⠛⠻⠿⣶⠚⠉⢹⣿⡿⠉⣀⣾⣿⡿⠁
+⠀⠀⠙⢭⡿⣿⣆⠀⠀⠀⠳⡀⣰⠁⣴⠟⠉⠉⠻⡀
+⠀⠀⠀⠀⠀⡹⠿⣤⣤⣀⣤⣾⣿⣶⡇⠀⠀⠀⠀⠈⡄
+*/
