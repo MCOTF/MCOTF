@@ -41,12 +41,14 @@
 				age0++;
 				console.log(age0);
 				
-				
+				//先自增再运算
 				var p = 10;
 				console.log(++p +10);//先自增(p=11),11+10=21 
+				//先运算再自增
 				var p = 10;
+				console.log(p);//10
 				console.log(p++ +10);//20：p=10,10+10=20 ,然后再执行p+1
-				console.log(p + 10);//21
+				console.log(p);//11
 		</script>
 	</body>
 </html>
