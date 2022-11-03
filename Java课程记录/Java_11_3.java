@@ -8,5 +8,6 @@ public class Java_11_3 {
             i++;
         }
         System.out.println(s);
+        System.out.println(18*18);
     }
 }
