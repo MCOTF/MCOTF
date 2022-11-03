@@ -66,8 +66,11 @@
 				
 			//练习2.
 				var e = 10;
+				//这一步和运算符的优先顺序有关系
+				//等价于(e++) + (++e)
 				var f = e++ + ++e;
 				console.log(f);
+				//同理
 				var e = 10;
 				var f = ++e + e++;
 				console.log(f);
