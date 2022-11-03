@@ -69,6 +69,10 @@
 				var input2=Number(prompt("请输入第二个值"));
 				var sum1= Number(input1+input2)//强制转换
 				alert("结果为："+sum1);
+				//若输入12.5会导致输入错误
+				//使用parseFloat()可以转换
+				var sum2= parseFloat(num1)+parseFloat(num2);
+				alert("结果为："+sum2);
 		</script>
 	</body>
 </html>

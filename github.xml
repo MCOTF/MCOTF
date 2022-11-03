@@ -1,7 +1,0 @@
-<application>
-  <component name="GithubAccounts">
-    <account name="MCOTF" id="5311ca81-73de-416c-a0b4-9312a1648179">
-      <server host="github.com" />
-    </account>
-  </component>
-</application>

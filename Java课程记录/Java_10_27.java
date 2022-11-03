@@ -25,7 +25,6 @@ class student_1027 extends Java_10_27{
     }
     public void checkCode(){//验证机制
         if (this.checkCode == 1){
-            j = 0;
         }
         else{
             this.checkCode++;
@@ -72,11 +71,11 @@ public class Java_10_27 {
                 case 8 -> stu8.checkCode();
                 case 9 -> stu9.checkCode();
             }
-            if(j == 1){
-                System.out.println("你已经投过票了");
-                j = 0;
-                continue;
-            }
+//            if(j == 1){
+//                System.out.println("你已经投过票了");
+//                j = 0;
+//                continue;
+//            }
             System.out.println("请输入要投给的学生编号");//对应number
             int mainScore2 = input.nextInt();
 
