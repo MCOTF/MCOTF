@@ -3,6 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<style>
+			table{
+				background-color: black;
+			}
+			.th{
+				background-color: darkgrey;
+			}
+			.td{
+				background-color: darkgrey;
+			}
+			input{
+				width: 60px;
+			}
+		</style>
 	</head>
 	<body>
 		<script>
@@ -144,25 +158,47 @@
 					document.write("<br/>");
 				}
 				//操作题2
-				
+				//这里是用的getElement，不知道书上咋说的。
 		</script>
-		<table border="1">
-				<tr>
-					<th colspan="5">简易购物车</th>
+		<table border="0" cellpadding="10">
+				<tr class="th">
+					<th colspan="5"><h3>简易购物车</h3></th>
 				</tr>
-				<tr>
+				<tr class="th">
 					<th>商品名称</th>
 					<th>数量（件）</th>
 					<th>单价（元）</th>
 					<th>运费（元）</th>
 					<th>合计</th>
-			  </tr>
-				<tr>
+				</tr>
+				<tr class="td">
+					<!-- <form oninput="total.value=parseInt(quantity.value)+parseInt(price.value)+parseInt(freight.value)"> -->
 					<td>跑跑道具</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>
+						<input id="quantity" value="3"/>
+					</td>
+					<td>
+						<input id="price" value="5"/>
+					</td>
+					<td>
+						<input id="freight" value="5"/>
+					</td>
+					<td>
+						<output id="total" value=readtext()>0</output> 
+					</td>
+					</form>
+					<script>
+						function readtext(){
+							//获取值
+							var quantity = document.getElementById("quantity").value;
+							var price = document.getElementById("price").value;
+							var freight = document.getElementById("freight").value;
+							var total = document.getElementById("total").value;
+							total = parseInt(quantity)*parseInt(price)+parseInt(freight);
+							return total;
+						}
+						document.getElementById("total").innerHTML = readtext();
+					</script>
 				</tr>
 		</table>
 	</body>
