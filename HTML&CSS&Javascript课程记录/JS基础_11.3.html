@@ -29,10 +29,24 @@
 				console.log(num0==0.3);//false
 				
 				//2.自增运算符
+				//1+1=2
 				var sum0 = 1;
-				sum0++;
-				console.log(sum0);
-			
+				sum0++;//后置自增： sum0=sum0+1
+				++sum0;//前置自增： sum0=sum0+1
+				console.log(sum0);//3
+				var age0 = 20;
+				++age0;
+				console.log(age0);
+				var age0 = 20;
+				age0++;
+				console.log(age0);
+				
+				
+				var p = 10;
+				console.log(++p +10);//先自增(p=11),11+10=21 
+				var p = 10;
+				console.log(p++ +10);//20：p=10,10+10=20 ,然后再执行p+1
+				console.log(p + 10);//21
 		</script>
 	</body>
 </html>
