@@ -64,7 +64,7 @@
 				console.log(d);//d=(c=11+2)，然后c再自加=12
 				console.log(c);//c=12
 				
-			//练习2.
+			//练习2.(纠错点)
 				var e = 10;
 				//这一步和运算符的优先顺序有关系
 				//前置递增的优先级为15，后置递增的优先级为16，均大于算术符号12
@@ -118,8 +118,52 @@
 				console.log(5 != 3);//true (false的反义词)
 				console.log("5" !== 5);//true
 				
-				//5.
-				console.log("");
+			//练习3.默认值，confirm
+				//P7页选择题：C A A C B
+				//操作题1.2
+				document.write("<h1>JavaScrpt世界真奇妙</h1>");
+				document.write("<p>快来和我一起学习吧</p>");
+				var moRenzhi = prompt("请输入你喜欢的城市","北京");//默认值会弹出北京
+				
+				//confirm
+				
+			//练习4.
+				
+				//操作题1
+				var a=prompt("请输入#号的长度");
+				if(a >= 10){
+					a = 10;
+				}else{
+					a=a;//break和continue只能使用于循环中
+				}
+				
+				for (var c=0;c<a;c++){
+					for (var b=0;b<a;b++){
+						document.write("#");
+					}
+					document.write("<br/>");
+				}
+				//操作题2
+				
 		</script>
+		<table border="1">
+				<tr>
+					<th colspan="5">简易购物车</th>
+				</tr>
+				<tr>
+					<th>商品名称</th>
+					<th>数量（件）</th>
+					<th>单价（元）</th>
+					<th>运费（元）</th>
+					<th>合计</th>
+			  </tr>
+				<tr>
+					<td>跑跑道具</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+		</table>
 	</body>
 </html>
