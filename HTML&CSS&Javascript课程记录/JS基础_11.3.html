@@ -99,9 +99,23 @@
 				h%=i;//h=h%i 
 				console.log(h);//0
 				
-				//4.比较运算符
+				//4.比较运算符，返回Boolean类型
 				//== === != !== > < >= <= ?(三元运算符)
-				console.log(5>3);//true
+				console.log(5 > 3);//true
+				console.log(5 >= 3);//true (5大于或等于3)
+				console.log(5 == 3);//false(5不等于3)
+				console.log(18 == 18)//true
+				console.log(18 == "18");//true 约等于(近似)，样子一样也一样，实际转化了数值类型（会将字符串自动转化数字）
+				console.log(18 === "18");//false 相等但不等值（全等）
+				//故
+				console.log("20" == 20);//true
+				console.log("20" === 20);//false
+				//!=
+				console.log(5 != 3);//true (false的反义词)
+				console.log("5" !== 5);//true
+				
+				//5.
+				console.log("");
 		</script>
 	</body>
 </html>
