@@ -76,6 +76,10 @@
 				var f = ++e + e++;//先自增11 + 11++=12
 				console.log(f);//22 (11+11)
 				console.log(e);//12
+				//再同理
+				var e = 10
+				var f = e++ + e++;
+				console.log(f);//21
 				//拆分后为
 				var g=10;
 				console.log(g++);//g=10，g只执行了返回
