@@ -41,14 +41,34 @@
 				age0++;
 				console.log(age0);
 				
-				//先自增再运算
+				//先自增再运算，先自增，再返回值
 				var p = 10;
 				console.log(++p +10);//先自增(p=11),11+10=21 
-				//先运算再自增
+				//先运算再自增：先返回值，然后自增
 				var p = 10;
 				console.log(p);//10
 				console.log(p++ +10);//20：p=10,10+10=20 ,然后再执行p+1
 				console.log(p);//11
+				//p++或++p当与其他代码连用时，执行结果会不一样
+				
+			//练习1.
+				var a=10;
+				++a;//先自增，a=11
+				var b=++a + 2;//先自增，a=12
+				console.log(b);//b=12+2
+				console.log(a);//a=12
+				
+				var c=10;
+				c++;//c=11
+				var d=c++ +2;//先运算，c=11
+				console.log(d);//d=(c=11+2)，然后c再自加=12
+				console.log(c);//c=12
+				
+			//练习2.
+				var e = 10;
+				var f = ++e;
+				var g = e++;
+				console.log(g);
 		</script>
 	</body>
 </html>
