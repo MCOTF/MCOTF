@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/Java课程记录/Java_11_4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java课程记录/Java_11_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_11_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_11_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_11_3.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GzXo8rkgiUlAI1Uh47igOC9L8d" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,12 +42,24 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.Java_11_4">
     <configuration name="运行前不构建" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Java_10_28" />
       <module name="course-code" />
       <method v="2" />
     </configuration>
+    <configuration name="Java_11_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java_11_4" />
+      <module name="course-code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Java_11_4" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
