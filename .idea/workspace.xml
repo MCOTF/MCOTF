@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/Java课程记录/Java_11_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java课程记录/LuoGu_P/P1000.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java课程记录/LuoGu_P/P1001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java课程记录/LuoGu_P/P1002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java课程记录/LuoGu_P/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java课程记录/Java_11_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_11_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_11_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_11_3.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +34,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/MCOTF--ST/Documents/HBuilderProjects/course-code/Java课程记录/LuoGu_P",
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
-}</component>
-  <component name="RunManager" selected="应用程序.Java_11_4">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MCOTF--ST\Documents\HBuilderProjects\course-code\Java课程记录\LuoGu_P" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MCOTF--ST\Documents\HBuilderProjects\course-code\Java课程记录\LuoGu_P" />
+      <recent name="C:\Users\MCOTF--ST\Documents\HBuilderProjects\course-code\洛谷训练" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="运行前不构建" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Java_10_28" />
       <module name="course-code" />
@@ -51,6 +63,19 @@
     <configuration name="Java_11_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java_11_4" />
       <module name="course-code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="course-code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="course-code" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
