@@ -1,6 +1,6 @@
-package LuoGu_P;
-import java.io.*;
-import java.util.*;//直接java.util.*导入所有util类
+package luoGu_P;
+
+import java.util.Scanner;
 public class P1001 {
     public static void main(String[] args) {
         Scanner BLM = new Scanner(System.in);//建立输入对象
