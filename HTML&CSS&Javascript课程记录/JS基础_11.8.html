@@ -97,7 +97,45 @@
 				}else{
 					alert("这一年是平年");
 				}
+			
 				//多支else if ,switch
+			//练习3：
+				var grade = prompt("请输入你的成绩");
+				if (grade>100 || grade<0) {//判断数值正确
+					document.write("error");
+				} else if(grade=>90 || grade<=100){//包含100
+					document.write("A");
+				} else if(grade=>80){
+					document.write("B");
+				} else if(grade=>70){
+					document.write("C");
+				} else if(grade=>60){//包含60
+					document.write("D");
+				} else{
+					document.write("E")
+				}
+				
+			//练习4：
+				var input = prompt("请输入一个数字");
+				if(input > 59 || input <0){
+					alert("输过头了")
+				}else if(input < 10){
+					input2 = input.toString()+"0";//加0操作
+				}else{
+					//不做操作
+				}
+				var output = input2;//变量接受返回值
+				document.write(output);//输出
+				
+			//练习5：
+				var fruit = prompt("请输入您查询的水果");
+				switch (fruit){
+					case "苹果": alert("苹果卖1块");
+						break;
+					case "香蕉": alert("香蕉卖2块");
+						break;
+					default: alert("没有此水果");
+				}
 			//while循环
 			
 			//for循环
