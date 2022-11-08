@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.8.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.8.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <recent name="C:\Users\MCOTF--ST\Documents\HBuilderProjects\course-code\洛谷训练" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.运行前不构建">
+  <component name="RunManager">
     <configuration name="运行前不构建" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Java_10_28" />
       <module name="course-code" />
@@ -139,5 +140,16 @@
     <MESSAGE value="idea test" />
     <MESSAGE value="update for idea --bymcotf" />
     <option name="LAST_COMMIT_MESSAGE" value="update for idea --bymcotf" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Java课程记录/Java_11_6.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
