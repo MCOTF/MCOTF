@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<script>
+			//逻辑运算符
+			
+				//&&与 
+			//显示控制台Ctrl+Y
+				//false与true = false
+				console.log(3>5 && 3>2);//false
+				console.log(false && false);
+			
+				//|| 或
+				//true与false = true
+				console.log(3<5 || 3<2);//true
+				console.log(true || false);//true
+				console.log(false || false);//false
+			
+				//! 非
+				var isok = !true;
+				console.log(isok);//false
+			
+				var num = 7;
+				var str = "我爱你~中国~";
+				console.log(num>5 && str.length >= num);//true&&6 >=7  //true
+				console.log(num<5 && str.length >= num);//false
+				console.log(!(num<10));//!true //false
+				console.log(!(num<10 || str.length == num));//false
+			
+			//短路运算(逻辑中断)
+				//表达式1 &&(链接) 表达式2
+				//若表达式1为true,返回值为表达式2
+				console.log(123&&456);//456(表达式1为真：取表达式2)
+				//若为false，则取表达式1
+				console.log(0&&123);//0(表达式1：0为假)
+				
+				//或（找真行为）
+				console.log(0 || 123);//123
+				console.log(123 || 0);//123
+				console.log(0 || 0);//0
+				console.log(123 || 456);//123
+				
+				//小练习：
+				var num = 0;
+				console.log(123 || num++);//123 || 0(先返回，再递增)
+				console.log(num);
+				
+				//逻辑运算优先级最低
+				//与比或优先级高，最后考虑或
+				
+				//false || (true && true && true)=true
+				console.log(4>=6 || "人" !="阿凡达" && !(12*2==144) && true);
+				
+				//true == true && true =true
+				var num2 = 10;
+				console.log(5 == num2/2 && (2+2*num2).toString()==="22");
+				
+			//条件判断(分支控制)
+				//条件语句if
+				/* if(条件表达式){
+					执行语句1;
+				} */
+				if(3>5){//false
+					alert("沙漠骆驼");//不执行
+				}
+				//单支
+			//练习1：弹出输入框，要求用户输入年龄，如果大于十八岁，则允许进网吧
+				var age0 = prompt("请输入你的年龄：");
+				if(age0 >= 18){
+					alert("允许进入网吧");
+				}
+				
+
+				//双支
+				//条件语句if else
+				/* if(条件表达式){
+					执行语句1;
+				}else{
+					执行语句2;
+				} */
+				var age1 = prompt("请输入你的年龄：");
+				if(age1 >= 18){
+					alert("允许进入网吧");
+				}else{
+					alert("回家做作业去");
+				}
+			//练习2：判断闰年(用户输入一个年份，判断是否是闰年)
+				var year = prompt("请输入一个年份");//默认为string型，用%自动转换了所以能正常计算
+				if((year%4 == 0 && year % 100 != 0) || year % 400 == 0){//能被4整除，但不能被100整除，或能被400整除
+					alert("这一年是闰年")
+				}else{
+					alert("这一年是平年");
+				}
+			
+				//多支else if ,switch
+			//练习3：
+				var grade = prompt("请输入你的成绩");
+				if (grade>100 || grade<0) {//判断数值正确
+					document.write("error");
+				} else if(grade=>90 || grade<=100){//包含100,包含90
+					document.write("A");
+				} else if(grade=>80){//不需要再增加score>90了
+					document.write("B");
+				} else if(grade=>70){
+					document.write("C");
+				} else if(grade>60){//不含60
+					document.write("D");
+				} else{
+					document.write("E")
+				}
+				
+			//练习4：
+				var num1 = prompt("请输入一个数字");
+				if(num1 < 60 || num1 > 0){
+					var out =(num1 < 10)?(num1 = "0"+num1):(out = num1);//可以不加括号，主要是看的我头疼
+				}else{
+					//不做操作,但属于输出超过59了，原样输出那部分放上面三元运算符了
+				}
+				document.write(out);//输出，没有用alert，弹的我头疼
+				
+			//练习5：
+				var fruit = prompt("请输入您查询的水果");
+				switch (fruit){
+					case "苹果": alert("苹果卖1块");
+						break;
+					case "香蕉": alert("香蕉卖2块");
+						break;
+					default: alert("没有此水果");
+				}
+			//练习6：
+				var name = prompt("请输入你的名字");
+				if(name == "刘德华"){
+					alert("恭喜您中奖35元");
+				}else{
+					alert("很抱歉您没有中奖");
+				}
+			//多支switch
+			
+			//while循环
+			
+			//for循环
+			
+		</script>
+	</body>
+</html>

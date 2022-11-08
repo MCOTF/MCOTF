@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java课程记录/Java_11_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_11_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.8.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java课程记录/Java_11_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_11_7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GzXo8rkgiUlAI1Uh47igOC9L8d" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,15 +38,38 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MCOTF--ST/Documents/HBuilderProjects/course-code/Java课程记录/LuoGu_P&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MCOTF--ST\Documents\HBuilderProjects\course-code\Java课程记录\LuoGu_P" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MCOTF--ST\Documents\HBuilderProjects\course-code\Java课程记录\LuoGu_P" />
+      <recent name="C:\Users\MCOTF--ST\Documents\HBuilderProjects\course-code\洛谷训练" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="运行前不构建" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Java_10_28" />
       <module name="course-code" />
       <method v="2" />
     </configuration>
+    <configuration name="Java_11_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java_11_4" />
+      <module name="course-code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Java_11_4" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667405724038</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update for idea --bymcotf">
+      <created>1667736883941</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667736883941</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update for idea --bymcotf">
+      <created>1667821553668</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667821553668</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +139,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="代码能跑了，人不用跑了" />
     <MESSAGE value="idea test" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea test" />
+    <MESSAGE value="update for idea --bymcotf" />
+    <option name="LAST_COMMIT_MESSAGE" value="update for idea --bymcotf" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Java课程记录/Java_11_7.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
