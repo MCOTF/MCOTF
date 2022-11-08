@@ -9,28 +9,28 @@
 		<script>
 			//逻辑运算符
 			
-			//&&与 
+				//&&与 
 			//显示控制台Ctrl+Y
-			//false与true = false
-			console.log(3>5 && 3>2);//false
-			console.log(false && false);
+				//false与true = false
+				console.log(3>5 && 3>2);//false
+				console.log(false && false);
 			
-			//|| 或
-			//true与false = true
-			console.log(3<5 || 3<2);//true
-			console.log(true || false);//true
-			console.log(false || false);//false
+				//|| 或
+				//true与false = true
+				console.log(3<5 || 3<2);//true
+				console.log(true || false);//true
+				console.log(false || false);//false
 			
-			//! 非
-			var isok = !true;
-			console.log(isok);//false
+				//! 非
+				var isok = !true;
+				console.log(isok);//false
 			
-			var num = 7;
-			var str = "我爱你~中国~";
-			console.log(num>5 && str.length >= num);//true&&6 >=7  //true
-			console.log(num<5 && str.length >= num);//false
-			console.log(!(num<10));//!true //false
-			console.log(!(num<10 || str.length == num));//false
+				var num = 7;
+				var str = "我爱你~中国~";
+				console.log(num>5 && str.length >= num);//true&&6 >=7  //true
+				console.log(num<5 && str.length >= num);//false
+				console.log(!(num<10));//!true //false
+				console.log(!(num<10 || str.length == num));//false
 			
 			//短路运算(逻辑中断)
 				//表达式1 &&(链接) 表达式2
@@ -50,11 +50,37 @@
 				var num = 0;
 				console.log(123 || num++);//123 || 0(先返回，再递增)
 				console.log(num);
-			//条件判断
+				
+				//逻辑运算优先级最低
+				//与比或优先级高，最后考虑或
+				
+				//false || (true && true && true)=true
+				console.log(4>=6 || "人" !="阿凡达" && !(12*2==144) && true);
+				
+				//true == true && true =true
+				var num2 = 10;
+				console.log(5 == num2/2 && (2+2*num2).toString()==="22");
+				
+			//条件判断(分支控制)
+				//条件语句if
+				/* if(条件表达式){
+					执行语句
+				} */
+				if(3>5){//false
+					alert("沙漠骆驼");//不执行
+				}
+			//练习：弹出输入框，要求用户输入年龄，如果大于十八岁，则允许进网吧
+				var age0 = prompt("请输入你的年龄：");
+				if(age0 >= 18){
+					alert("允许进入网吧");
+				}
+				
+				//单支
+				//双支
+				//多支switch
+			//while循环
 			
 			//for循环
-			
-			//while循环
 			
 		</script>
 	</body>
