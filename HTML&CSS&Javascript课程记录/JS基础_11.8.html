@@ -103,9 +103,9 @@
 				var grade = prompt("请输入你的成绩");
 				if (grade>100 || grade<0) {//判断数值正确
 					document.write("error");
-				} else if(grade=>90 || grade<=100){//包含100
+				} else if(grade=>90 || grade<=100){//包含100,包含90
 					document.write("A");
-				} else if(grade=>80){
+				} else if(grade=>80){//不需要再增加score>90了
 					document.write("B");
 				} else if(grade=>70){
 					document.write("C");
@@ -116,16 +116,13 @@
 				}
 				
 			//练习4：
-				var input = prompt("请输入一个数字");
-				if(input > 59 || input <0){
-					alert("输过头了")
-				}else if(input < 10){
-					input2 = input.toString()+"0";//加0操作
+				var num1 = prompt("请输入一个数字");
+				if(num1 < 60 || num1 > 0){
+					var out =(num1 < 10)?(num1 = "0"+num1):(out = num1);
 				}else{
-					//不做操作
+					//不做操作,但属于输出超过59了
 				}
-				var output = input2;//变量接受返回值
-				document.write(output);//输出
+				document.write(out);//输出
 				
 			//练习5：
 				var fruit = prompt("请输入您查询的水果");
@@ -136,6 +133,15 @@
 						break;
 					default: alert("没有此水果");
 				}
+			//练习6：
+				var name = prompt("请输入你的名字");
+				if(name == "刘德华"){
+					alert("恭喜您中奖35元");
+				}else{
+					alert("很抱歉您没有中奖");
+				}
+			//多支switch
+			
 			//while循环
 			
 			//for循环
