@@ -91,7 +91,7 @@
 					alert("回家做作业去");
 				}
 			//练习2：判断闰年(用户输入一个年份，判断是否是闰年)
-				var year = prompt("请输入一个年份");
+				var year = prompt("请输入一个年份");//默认为string型，用%自动转换了所以能正常计算
 				if((year%4 == 0 && year % 100 != 0) || year % 400 == 0){//能被4整除，但不能被100整除，或能被400整除
 					alert("这一年是闰年")
 				}else{
@@ -109,7 +109,7 @@
 					document.write("B");
 				} else if(grade=>70){
 					document.write("C");
-				} else if(grade=>60){//包含60
+				} else if(grade>60){//不含60
 					document.write("D");
 				} else{
 					document.write("E")
