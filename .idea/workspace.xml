@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/Java课程记录/Java_11_6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java课程记录/Java_11_7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java课程记录/LuoGu_P/P1001.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/LuoGu_P/P1001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java课程记录/LuoGu_P/P1002.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667736883941</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update for idea --bymcotf">
+      <created>1667821553668</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667821553668</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
