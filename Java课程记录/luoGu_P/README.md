@@ -1,4 +1,4 @@
-## [LuoGu_P By-MCOTF__ST(计1S/Smotrit)](https://space.bilibili.com/19200133)
+## [luoGu_P By-MCOTF__ST(计1S/Smotrit)](https://space.bilibili.com/19200133)
 
 #### 介绍
 

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/out/production/course-code" />
+    <output-test url="file://$MODULE_DIR$/out/test/course-code" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Java课程记录" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SQL查询课程记录" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/Java课程记录/早期内容" />
+      <excludeFolder url="file://$MODULE_DIR$/SQL查询课程记录" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="19" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
