@@ -13,7 +13,7 @@ class Student{
         System.out.println("姓名:"+this.name+"年龄:"+this.age+"学校:"+school);//this.name调用本类属性
     }
 }
-public class Java10_21_371 {
+public class Java_10_21_371 {
     public static void main(String[] args) {
         Student stu1 = new Student("张三",18); //创建student对象
         Student stu2 = new Student("李四",19);
