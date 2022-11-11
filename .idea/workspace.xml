@@ -4,21 +4,6 @@
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java课程记录/Java_11_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_11_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Animal1104.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Animal1104.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Dog1104.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Dog1104.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java10_21_371.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java10_21_371.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_10_21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_10_21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_10_26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_10_26.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_10_27.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_10_27.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_10_28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_10_28.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/abs1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/abs1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/abstract1106.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/abstract1106.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/cat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/dog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/student1028.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/student1028.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/student_1027.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/student_1027.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +48,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.其他文件类型&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;debugger.stepping&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -147,7 +132,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668128726165</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="内容越传越离谱">
+      <created>1668130412157</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668130412157</updated>
+    </task>
+    <task id="LOCAL-00011" summary="内容越传越离谱">
+      <created>1668130437784</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668130437784</updated>
+    </task>
+    <task id="LOCAL-00012" summary="内容越传越离谱">
+      <created>1668130498457</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668130498457</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
