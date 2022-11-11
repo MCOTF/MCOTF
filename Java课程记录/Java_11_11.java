@@ -1,4 +1,5 @@
 //super调用父类构造方法
+//final关键字
 class Animal1111{
     private String name;
     private int age;
@@ -23,6 +24,12 @@ class Dog1111 extends Animal1111{
     public String info() {
         return super.info()+"子类颜色"+this.color;//简化info操作
     }
+}
+final class Final1111{//final关键字
+    //此类不能作为父类
+    final int a = 1;//第一次给a赋值后，a被锁死，只能等于1了，final变量不允许更改
+//    a = 2;//再给a赋值会报错
+    int b = 1;
 }
 public class Java_11_11 {
     public static void main(String[] args) {

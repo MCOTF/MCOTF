@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/Java课程记录/Java_11_11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitee.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java课程记录/Java_11_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_11_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java课程记录/Java_11_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_11_11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/Animal1104.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Animal1104.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/Dog1104.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Dog1104.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java10_21_371.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java10_21_371.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_10_21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_10_21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_10_26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_10_26.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_10_27.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_10_27.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_10_28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_10_28.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/abs1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/abs1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/abstract1106.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/abstract1106.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/cat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/dog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/student1028.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/student1028.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/course-code/student_1027.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/student_1027.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +74,6 @@
       <recent name="C:\Users\MCOTF--ST\Documents\HBuilderProjects\course-code\Java课程记录\LuoGu_P" />
       <recent name="C:\Users\MCOTF--ST\Documents\HBuilderProjects\course-code\洛谷训练" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="运行前不构建" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Java_10_28" />
-      <module name="course-code" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -135,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667911648256</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="内容越传越离谱">
+      <created>1668128726165</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668128726165</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -165,7 +177,8 @@
     <MESSAGE value="代码能跑了，人不用跑了" />
     <MESSAGE value="idea test" />
     <MESSAGE value="update for idea --bymcotf" />
-    <option name="LAST_COMMIT_MESSAGE" value="update for idea --bymcotf" />
+    <MESSAGE value="内容越传越离谱" />
+    <option name="LAST_COMMIT_MESSAGE" value="内容越传越离谱" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
