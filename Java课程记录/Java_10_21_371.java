@@ -1,3 +1,4 @@
+//面向对象
 class Student{
     //变量
     String name;

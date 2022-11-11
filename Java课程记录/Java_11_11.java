@@ -21,7 +21,7 @@ class Dog1111 extends Animal1111{
         this.color = color;
     }
 
-    @Override
+    @Override//自动生成的，第一次见
     public String info() {
         return super.info()+"子类颜色"+this.color;//简化info操作
     }

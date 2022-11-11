@@ -1,16 +1,14 @@
+//abstract抽象类自习
 abstract class abstract1106{
 
     //面向方法-抽象类
     int a;
     String b;
     Boolean c;
-    public void read(){
-        System.out.println("抽象类方法");
-    }
+    public abstract void read();
 }
 class abs1 extends abstract1106{
     public void read(){
-        super.read();
         System.out.println("被抽象类继承的方法");
     }
 }
