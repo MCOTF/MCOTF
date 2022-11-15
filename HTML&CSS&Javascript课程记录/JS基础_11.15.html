@@ -34,6 +34,45 @@
 					default:
 					document.write("没有case的结果");//default不需要加break
 				}
+				
+			//循环语句 for while dowhile / continue break
+				//for循环：重复执行某些代码，通常跟计数有关
+				//for(初始变量;条件表达式;操作表达式) {循环体}
+				
+				//可以用prompt控制i的数量
+				for(var i = 1;i<=100;i++){//js需要先声明变量
+					console.log("看左边");//(100)看左边：100为循环100次
+				}
+				//for循环直到条件表达式为false才终止
+				//i++一般是最后执行的语句
+				
+			//Sources断点测试
+				//使用for执行不同内容
+			
+			//练习：输出一个人1-100岁(一生)
+				for(var i = 1;i<=100;i++){
+					switch (i){//这里用的switch，用if会更简单一点
+						case 1:
+						console.log("这个人今年1岁了，他出生了！");//没用字符串拼接，因为没必要
+							break;
+						case 100:
+						console.log("这个人今年100岁了，他死了！");//没用字符串拼接，因为没必要
+							break;
+						default:
+						console.log("这个人今年"+i+"岁")//字符串拼接
+							break;
+					}
+				}
+				
+			//练习：1-100整数之和
+				var sum1 = 0;//避免多余运算
+				for(var i = 1;i<=100;i++){
+					sum1+=i;//简化运算步骤
+				}
+				console.log(sum1);//避免多余运算
+				
+			//小组项目：简易atm
+				
 		</script>
 	</body>
 </html>
