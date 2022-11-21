@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/Java课程记录/Java_11_12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_11_6_19_00_取消提交了变更_[变更]/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java课程记录/Java_11_18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java课程记录/Java_11_21.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Animal1111.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Animal1111.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Dog1111.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Dog1111.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Final1111.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Final1111.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_10_21_371.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_10_21_371.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_11_11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_11_11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_11_6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_11_6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/abs1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/abs1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/abstract1106.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/abstract1106.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.15.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML&amp;CSS&amp;Javascript课程记录/JS基础_11.15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java课程记录/Java_11_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_11_11.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

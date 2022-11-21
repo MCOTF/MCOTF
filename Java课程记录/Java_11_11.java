@@ -34,7 +34,7 @@ final class Final1111{//final关键字
 }
 
 abstract class Abstract1111{//抽象类
-    public abstract void abs1();//抽象方法：无方法体，抽象类中必须有一个以上抽象方法>=1，且继承调用的话，那么子类必须实现该抽象类的全部抽象方法
+    public abstract void abs1();//抽象方法：无方法体{}，抽象类中必须有一个以上抽象方法>=1，且继承调用的话，那么子类必须实现该抽象类的全部抽象方法
     public void abs2(){};//普通方法：在抽象类中存在的数量>=0
     protected abstract void abs3();//抽象方法不能用private修饰，否则会自相矛盾
 }

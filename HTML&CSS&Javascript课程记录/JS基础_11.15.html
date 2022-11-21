@@ -78,20 +78,22 @@
 			//思考：五行五列星星（循环嵌套）
 				for(var a = 1;a<=5;a++){
 					for(var b = 1;b<=5;b++){
-						document.write("⭐");
+						document.write("⭐");//内层控制星数
 					}
-					document.write("<br/>");
+					document.write("<br/>");//外层控制行数
 				}
 			//思考：倒三角星星（循环嵌套2）
-				for(var a = 1;a<=5;a++){
-					for(var b = 5;b<=6 - a;b++){//或者倒序b--也行，但不知道为什么⭐死活出不来
+			var a = 1;
+			var b = 5;
+				for(a;a<=5;a++){b
+					for(b;b<=6 - a;b++){//或者倒序b--也行，但不知道为什么⭐死活出不来
 						document.write("⭐");
 					}
 					document.write("<br/>");
 				}
 			//思考：九九乘法表（循环嵌套3）
 				for(var x = 1;x<=9;x++){
-					for(y = 1;y<=x;y++){
+					for(var y = 1 ;y<=x;y++){
 						document.write(y+"*"+x+"="+(x*y)+" ");
 					}
 					document.write("<br/>");
