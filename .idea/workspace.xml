@@ -4,10 +4,6 @@
     <list default="true" id="b7943b07-81d4-4f01-ae25-2922d3f1b144" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java课程记录/Java_11_21_43.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java课程记录/Java_11_21_43.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/Java_11_21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/Java_11_21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/course-code/dog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/course-code/shape.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669031689326</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="更新4-3 多彩的声音">
+      <created>1669034096353</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669034096353</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -231,7 +234,18 @@
     <MESSAGE value="update for idea --bymcotf" />
     <MESSAGE value="内容越传越离谱" />
     <MESSAGE value="更新4-1 打印不同的图形" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新4-1 打印不同的图形" />
+    <MESSAGE value="更新4-3 多彩的声音" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新4-3 多彩的声音" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

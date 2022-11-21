@@ -1,11 +1,12 @@
 //案例4-3 多彩的声音
 //要求：抽象类
 //对象：?，主人，主人以外的人
-abstract class Animal{//抽象类-动物
+abstract class Animal1121 {//抽象类-动物
+    //tips：一般抽象类的子类用不到super
     abstract void shut();//动物叫
     abstract void eat();//动物吃
 }
-class Dog extends Animal{//?
+class Dog1121 extends Animal1121 {//?
     void shut(){//狗正常叫
         System.out.println("?:汪");
     }
@@ -19,37 +20,37 @@ class Dog extends Animal{//?
         System.out.println("?:正在吃");
     }
 }
-abstract class Human{//抽象类-人
+abstract class Human1121 {//抽象类-人
     abstract void feeding();//投喂
 }
-class Master extends Human{//主人
+class Master1121 extends Human1121 {//主人
     void feeding() {//主人投喂
         System.out.println("吃");
     }
 }
-class MasterFamily extends Human{
+class MasterFamily1121 extends Human1121 {
     void feeding(){//家人投喂
-
+        System.out.println("MasterFamilyfeeding");
     }
 }
-class man extends Human{//陌生人(主人以外的人)
+class man1121 extends Human1121 {//陌生人(主人以外的人)
     void feeding() {//你投喂
-        System.out.println("");
+        System.out.println("man-feeding");
     }
 }
 public class Java_11_21_43 {
     public static void main(String[] args) {
-        Dog d1 = new Dog();
+        Dog1121 d1 = new Dog1121();//生成狗-对象
         int a = 0;//调试值
 
         //狗的分析行为
         if(a == 0){//主人投喂
             d1.eat();
-            d1.shut();
+            d1.shut1();
             //再细节可以加一个欢跳的方法，不过知道思路了就懒得做了
         } else if (a == 1) {//家人投喂
             d1.eat();
-            d1.shut1();
+            d1.shut();
         } else if (a == 2) {//陌生人投喂
             d1.shut2();//陌生人喂的就不吃了，故不执行eat方法
         } else {//投喂以外的非法操作
