@@ -1,7 +1,7 @@
 //案例4-1 打印不同的图形
 import java.util.Scanner;
 
-class shape{//没用上
+class shape1121 {//没用上
     private double a;
     private double b;
 
@@ -22,12 +22,12 @@ class shape{//没用上
         this.b = b;
     }
 }
-class yuan extends shape{//继承shape变量
+class yuan1121 extends shape1121 {//继承shape变量
     public static double size(double a){
         return a*a*3.14;//打印不同的图形，如果是图案直接走print也可以
     }
 }
-class fang extends shape{//继承shape变量
+class fang1121 extends shape1121 {//继承shape变量
     public static double size(double a,double b){
         return a*b;
     }
