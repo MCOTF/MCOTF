@@ -87,6 +87,23 @@
 			console.log(sum);
 			//练习：一个班所有成绩
 			//假设有三名同学
+			
+			//while，do while循环
+			//while(表达式){循环体}
+			var i = 0;//声明
+			var sum = 0;
+			while(i<=100){//表达式，i开始至少要小于100
+				sum = sum + i;//循环语句
+				i++;//终止条件
+			}
+			console.log(sum);
+			
+			//练习：弹出提示框，用户输入我爱你，提示框则不再弹出，否则将一直弹出
+			var str = "";
+			while(!(str === "我爱你")){
+				str = prompt("你爱我吗","我爱你");
+			}
+			console.log(str);
 		</script>
 	</body>
 </html>
