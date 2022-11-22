@@ -65,11 +65,23 @@
 				}
 				document.write("<br/>");
 			}
+			//练习：求100以内的奇数与求偶数
+			//思路：能被二整除的是偶数，否则是奇数
+			//求偶数
+			var sum = 0;
+			for(var a = 1;a<=100;a++){
+				if(a%2 == 0){
+					console.log(a+"是偶数");
+				}else{
+					console.log(a+"是奇数");
+				}
+				
+			}
 			
 			//练习：求和，平均值
 			var sum = 0;
 			for(var a = 1;a<=100;a++){
-				sum = sum + a;
+				sum += a;
 			}
 			console.log(sum);//和
 			console.log(sum / a);//平均值
@@ -79,12 +91,10 @@
 			console.log(9%3 == 0);//test
 			for(var a = 1;a<=100;a++){
 				if (a%3 == 0) {
-					sum = sum + a;
-				} else{
-					//留空
-				}
+					sum += a;
+				} 
 			}
-			console.log(sum);
+			console.log(sum);//1683
 			//练习：一个班所有成绩
 			//假设有三名同学
 			
@@ -93,7 +103,7 @@
 			var i = 0;//声明
 			var sum = 0;
 			while(i<=100){//表达式，i开始至少要小于100
-				sum = sum + i;//循环语句
+				sum += i;//循环语句
 				i++;//终止条件
 			}
 			console.log(sum);
@@ -115,12 +125,47 @@
 				console.log("你已经"+i+"岁了");//tips：局部变量
 				i++;
 			}while(i<=100);
+			
 			//练习：do while弹出提示框，用户输入我爱你，提示框则不再弹出，否则将一直弹出
 			var str = "";
 			do{
 				str = prompt("你爱我吗","我爱你");
-			}while(!(str === "我爱你"));
+			}while(!(str === "我爱你"));//建议换成！==
+			alert("我也爱你");
 			console.log(str);
+			
+			//练习：do while写1-100整数的和
+			
+			//continue和break
+			//continue 继续
+			
+			//抽象解释：吃苹果，第三个有虫子，第三个不吃了(continue)，吃第四个，第五个。
+			for(var i = 1;i<=5;i++){//吃5个苹果
+				if(i==3){//第三个苹果有虫子
+					continue;//不吃了
+				}
+				console.log("我正在吃"+i+"个苹果");
+			}
+			//break 中断
+			
+			//抽象解释：吃苹果，第三个有“半个”虫子，口区了，剩下的也不吃了(break)
+			for(var i = 1;i<=5;i++){//吃5个苹果
+				if(i==3){//第三个苹果有虫子
+					break;//口区 了
+				}
+				console.log("我正在吃"+i+"个苹果");
+			}
+			
+			//练习：除了能被7整除的数以外的和
+			var sum = 0;//重置变量
+			for(var i = 1;i<=100;i++){
+				if (i % 7 ==0) {//过滤能被7整除的数
+					continue;
+				} else{
+					sum += i;//求和
+				}
+			}
+			console.log(sum);//4315
 		</script>
 	</body>
 </html>
