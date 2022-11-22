@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			
+			//控制台输出循环星星
+			// var inp = prompt("输入⭐个数");//13行的5可以改为inp
+			var str = "";
+			for(var a =1;a<=5;a++){
+				str = "⭐"+str;//总和计数
+			}
+			console.log(str);
+			
+			//循环嵌套：外层控制行数，内层控制列数
+			for(var i = 1;i <= 5;i++){
+				for(var j = 1;j <= 5;j++){
+					str = "⭐"+str;
+				}
+				str = str+"\n"
+			}
+			console.log(str);
+			
+		</script>
+	</body>
+</html>
