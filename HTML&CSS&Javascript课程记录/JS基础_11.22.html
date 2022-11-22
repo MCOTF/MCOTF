@@ -104,6 +104,23 @@
 				str = prompt("你爱我吗","我爱你");
 			}
 			console.log(str);
+			
+			//do while先do再循环
+			// do{循环体}while(表达式);
+			//区别：dowhile至少会执行一次
+			
+			//练习：do while输出人的一生1-100岁
+			var i = 1;//tips：全局变量
+			do{
+				console.log("你已经"+i+"岁了");//tips：局部变量
+				i++;
+			}while(i<=100);
+			//练习：do while弹出提示框，用户输入我爱你，提示框则不再弹出，否则将一直弹出
+			var str = "";
+			do{
+				str = prompt("你爱我吗","我爱你");
+			}while(!(str === "我爱你"));
+			console.log(str);
 		</script>
 	</body>
 </html>
