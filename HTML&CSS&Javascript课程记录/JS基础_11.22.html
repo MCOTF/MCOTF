@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//控制台输出循环星星
+			var inp = prompt("输入⭐个数"); //12行的5可以改为inp
+			var str = "";
+			for (var a = 1; a <= 5; a++) {
+				str = "⭐" + str; //总和计数
+			}
+			console.log(str);
+
+			//循环嵌套：外层控制行数，内层控制列数
+			var str = ""; //重置
+			for (var i = 0; i < 5; i++) {
+
+				for (var j = 0; j < 5; j++) {
+					str = str + "⭐";
+				}
+				str = str + "\n" //换行
+			}
+			console.log(str);
+
+			//循环嵌套，三角星星
+			//思路
+			// ⭐			i = 1
+			// ⭐⭐		i = 2
+			// ⭐⭐⭐		i = 3
+			// ⭐⭐⭐⭐	i = 4
+			// ⭐⭐⭐⭐⭐	i = 5
+			//	故j跟i走即可
+			var str = ""; //重置
+			for (var i = 0; i < 10; i++) {
+
+				for (var j = 0; j <= i; j++) { //j跟i走
+					str = str + "⭐";
+				}
+				str = str + "\n" //换行
+			}
+			console.log(str);
+
+			//同理
+			//循环嵌套，倒三角星星
+			var str = ""; //重置
+			for (var i = 0; i < 10; i++) { //外层仍然控制行数
+
+				for (var j = 10; j > i; j--) { //内层从大到小依次递减
+					// 或
+					//for(var j = i;j <10 ;j++){//递增形式的倒序输出
+					str = str + "⭐";
+				}
+				str = str + "\n" //换行
+			}
+			console.log(str);
+
+			//九九加法表
+			for (var x = 1; x <= 9; x++) {
+				for (var y = 1; y <= x; y++) {
+					document.write(y + "+" + x + "=" + (x + y) + " ");
+				}
+				document.write("<br/>");
+			}
+			//练习：求100以内的奇数与求偶数
+			//思路：能被二整除的是偶数，否则是奇数
+			var sum = 0;
+			for (var a = 1; a <= 100; a++) {
+				if (a % 2 == 0) {
+					console.log(a + "是偶数");
+				} else {
+					console.log(a + "是奇数");
+				}
+			}
+
+			//练习：求和，平均值
+			var sum = 0;
+			for (var a = 1; a <= 100; a++) {
+				sum += a;
+			}
+			console.log(sum); //和
+			console.log(sum / a); //平均值
+
+			//练习：被三整除的数的总和
+			var sum = 0;
+			console.log(9 % 3 == 0); //test
+			for (var a = 1; a <= 100; a++) {
+				if (a % 3 == 0) {
+					sum += a;
+				}
+			}
+			console.log(sum); //1683
+
+			//while，do while循环
+			//while(表达式){循环体}
+			var i = 0; //声明
+			var sum = 0;
+			while (i <= 100) { //表达式，i开始至少要小于100
+				sum += i; //循环语句
+				i++; //终止条件
+			}
+			console.log(sum);
+
+			//练习：弹出提示框，用户输入我爱你，提示框则不再弹出，否则将一直弹出
+			var str = "";
+			while (!(str === "我爱你")) {
+				str = prompt("你爱我吗", "我爱你");
+			}
+			console.log(str);
+
+			//do while先do再循环
+			// do{循环体}while(表达式);
+			//区别：dowhile至少会执行一次
+
+			//练习：do while输出人的一生1-100岁
+			var i = 1; //tips：全局变量
+			do {
+				console.log("你已经" + i + "岁了"); //tips：局部变量
+				i++;
+			} while (i <= 100);
+
+			//练习：do while弹出提示框，用户输入我爱你，提示框则不再弹出，否则将一直弹出
+			var str = "";
+			do {
+				str = prompt("你爱我吗", "我爱你");
+			} while (!(str === "我爱你")); //建议换成！==
+			alert("我也爱你");
+			console.log(str);
+
+			//练习：do while写1-100整数的和
+			var sum = 0;
+			do {
+				sum += i;
+			} while (i <= 100);
+			console.log(sum);
+
+			//continue和break
+			//continue 继续
+
+			//抽象解释：吃苹果，第三个有虫子，第三个不吃了(continue)，吃第四个，第五个。
+			for (var i = 1; i <= 5; i++) { //吃5个苹果
+				if (i == 3) { //第三个苹果有虫子
+					continue; //不吃了
+				}
+				console.log("我正在吃" + i + "个苹果");
+			}
+
+			//break 中断
+
+			//抽象解释：吃苹果，第三个有“半个”虫子，口区了，剩下的也不吃了(break)
+			for (var i = 1; i <= 5; i++) { //吃5个苹果
+				if (i == 3) { //第三个苹果有虫子
+					break; //口区 了
+				}
+				console.log("我正在吃" + i + "个苹果");
+			}
+
+			//练习：1-100内除了能被7整除的数以外的和
+			var sum = 0; //重置变量
+			for (var i = 1; i <= 100; i++) {
+				if (i % 7 == 0) { //过滤能被7整除的数
+					continue;
+				} else {
+					sum += i; //求和
+				}
+			}
+			console.log(sum); //4315
+
+			//练习：求学生成绩（用户输入班级人数，之后依次输入每个学生的成绩，最后打印该班级总成绩和平均成绩）
+			var sum = 0; //重置变量
+			var avg = 0; //重置变量
+			var member = Number(prompt("请输入班级人数")); //统计人数
+			for (var i = 1; i <= member; i++) {
+				sum += Number(prompt("请输入第" + i + "位学生的成绩")); //求和+统计成绩
+			}
+			avg = sum / member; //平均分
+			document.write("该班人数为" + member + "，总成绩为" + sum + "，平均分为" + avg); //打印该班的总成绩和平均成绩
+		</script>
+	</body>
+</html>
