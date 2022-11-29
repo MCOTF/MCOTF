@@ -62,13 +62,22 @@
 			
 			//练习：创建一个数组，存放整数1-10；(改长度)
 			var arr = [];
-			for (var i = 0;i <= 10;i++){
-				arr[i] = i;
+			for (var i = 0;i < 10;i++){
+				arr[i] = i+1;//直接新增
 			}
 			console.log(arr);
 			
-			
-			
+			//练习，创建一个数组2,0,6,1,77,3,52,1,25,7，然后输出大于10的数，组成新的数组
+			var arr = [2,0,6,1,77,3,52,1,25,7];
+			var arr10 = [];
+			var j = 0;
+			for (var i = 0;i < arr.length;i++){
+				if (arr[i]>10){
+					arr10[j] = arr[i];
+					j++;
+				}
+			}
+			console.log(arr10);
 			
 		</script>
 	</body>
