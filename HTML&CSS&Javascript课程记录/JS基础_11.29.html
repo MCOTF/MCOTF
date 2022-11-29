@@ -28,10 +28,27 @@
 			//练习：控制台依次打印星期数
 			var arr = ["星期一","星期二","星期三","星期四","星期五","星期六","星期日"];
 			for (var i = 0;i < arr.length;i++){
-				console.log(arr[i]);
+				console.log(arr[i]);//循环访问下标
 			}
 			
-			//
+			//练习：求数组[2,6,7,4]的和与平均值
+			var sum = 0;
+			var arr = [2,6,7,4];
+			for (var i = 0;i < arr.length;i++){
+				sum += arr[i];
+			}
+			var avg = sum / arr.length;
+			console.log(sum,avg)//19 | 4.75
+			
+			//练习：数组[2,6,3,76,52,25,7]的最大值
+			var max = 0;
+			var arr = [2,6,3,76,52,25,7];
+			for (var i = 0;i < arr.length;i++){
+				if (arr[i]>max) {
+					max = arr[i];
+				} 
+			}
+			console.log(max);
 		</script>
 	</body>
 </html>
