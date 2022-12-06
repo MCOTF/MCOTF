@@ -73,6 +73,16 @@
 			}
 			console.log(nTest());//3
 			
+			//return返回值
+			function cook2(aru){
+				console.log(aru);//输出函数被放入函数内部，不合适
+			}
+			cook2("大肘子");
+			//建议更改为
+			function cook3(aru){
+				return aru;//改为return
+			}
+			console.log(cook3("大肘子"));
 			
 			
 		</script>
