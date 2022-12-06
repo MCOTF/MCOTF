@@ -86,14 +86,25 @@
 			
 			//练习:利用函数判断是否是闰年
 			//闰年:能被4整除，但不能被100整除，或能被400整除
-			function testRunYear(year){
+			function isRunYear(year){
 				if((year%4 == 0 && year % 100 != 0) || year % 400 == 0){
 					return "这一年是闰年";
 				}else{
-					return "这一年是平年";
+					return "这一年是平年";//函数内可以有多个return
 				}
 			}
-			console.log(testRunYear(2022));
+			console.log(isRunYear(2022));//调用
+			//练习:利用函数求1-100奇数的和
+			function getSum2(){
+				var sum = 0;
+				for (var i = 1;i <= 100;i++) {
+					if (i % 2 == 1) {
+						sum += i;
+					} 
+				}
+				return sum;
+			}
+			console.log(getSum2());//这里只需要求1-100，所以传空参就行
 		</script>
 	</body>
 </html>
