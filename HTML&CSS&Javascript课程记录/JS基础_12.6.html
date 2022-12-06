@@ -7,6 +7,7 @@
 	<body>
 		<script>
 			//JS函数:function
+			//重复执行相同的代码
 			//f(x) = 2x+3 ,x=3,f(x)=9
 			
 			//函数结构
@@ -32,6 +33,38 @@
 			// console.log(getSum(1,100));
 			getSum(1,100);//5050
 			getSum(2,50);//1274
+			
+			//重复调用
+			function cook(){
+				console.log("宫保鸡丁");
+			}
+			var i = 0;
+			while(i<3){
+				cook();//循环体
+				i++;
+			}
+			
+			//实现不同的效果
+			function toPrint(a){
+				document.write("a");
+			}
+			toPrint(123);
+			toPrint(456);
+			//不定长参数arguments：存储所有传递参数
+			function f(a,f,t,...rest){
+				console.log(rest);
+			}
+			f(1,3,4,5,6);//输出[5,6]
+			function f(...rest){
+				console.log(rest);
+			}
+			f(1,3,4,5,6);//输出[1,3,4,5,6]
+			
+			//空形参
+			function nTest(){
+				return 1+2;
+			}
+			console.log(nTest());
 			
 			
 		</script>
