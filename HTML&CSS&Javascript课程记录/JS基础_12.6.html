@@ -11,13 +11,28 @@
 			
 			//函数结构
 			function setName(a,b){//声明函数“setName”，(a,b)为形参（形式参数）
+				document.write("")//函数体
 				return a+b+1;//返回值(调用时给出的结果)
 			}
 			console.log(setName(1,2));//调用（1+2+1=4）,(1,2)为实参（实际参数）
 			
 			//函数规范
 			//函数名使用动词，变量使用名词
-			//
+			//小驼峰式命名
+			
+			//getSum函数：封装sum
+			function getSum(a,b){
+				var sum = 0;
+				for (a;a<=b;a++){
+					sum += a;
+				}
+				console.log(sum);
+				// return sum;//返回值
+			}
+			// console.log(getSum(1,100));
+			getSum(1,100);//5050
+			getSum(2,50);//1274
+			
 			
 		</script>
 	</body>
