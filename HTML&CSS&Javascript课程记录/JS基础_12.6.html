@@ -107,17 +107,41 @@
 			console.log(getSum2());//这里只需要求1-100，所以传空参就行
 			
 			//声明函数：函数表达式(匿名函数)
+			//函数表达式存放的是函数，变量存放函数值
 			//格式：function (){}
 			var fun = function(){//函数名:fun
 				//函数体
 				console.log("我是函数表达式");
 			}
 			fun();//调用
+			console.log(fun);
 			
 			var fun = function(aru){
 				console.log(aru);
 			}
 			fun("输出测试");
+			console.log(fun);
+			//函数作用域:判断全局变量与局部变量，全局作用域与局部作用域
+			//全局作用域:Script标签或外链js文件下的为全局作用域
+			//局部作用域:在函数内部的为局部作用域
+			
+			var num = 10;//全局变量，在script标签下声明
+			
+			function fn(){
+				var num = 20;//局部变量，在函数内部声明
+				console.log(num);
+			}
+			fn();
+			
+			//如果是在函数内部没有声明（没有使用var），直接赋值也属于全局变量
+			function fn3(){
+				var num1 = 10;
+				num2 = 20;//没有使用var
+			}
+			fn3();//需要调用函数后，138-139才会被执行，否则输出num2仍然会报错
+			// console.log(num1);//报错：局部变量只能在函数内部起作用
+			console.log(num2);//有返回值20，是全局变量
+			
 		</script>
 	</body>
 </html>
