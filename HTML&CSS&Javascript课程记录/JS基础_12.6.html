@@ -84,7 +84,16 @@
 			}
 			console.log(cook3("大肘子"));
 			
-			
+			//练习:利用函数判断是否是闰年
+			//闰年:能被4整除，但不能被100整除，或能被400整除
+			function testRunYear(year){
+				if((year%4 == 0 && year % 100 != 0) || year % 400 == 0){
+					return "这一年是闰年";
+				}else{
+					return "这一年是平年";
+				}
+			}
+			console.log(testRunYear(2022));
 		</script>
 	</body>
 </html>
