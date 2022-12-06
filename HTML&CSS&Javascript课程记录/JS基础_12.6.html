@@ -10,7 +10,7 @@
 			//重复执行相同的代码
 			//f(x) = 2x+3 ,x=3,f(x)=9
 			
-			//函数结构
+			//函数关键字定义函数(命名函数)
 			function setName(a,b){//声明函数“setName”，(a,b)为形参（形式参数）
 				//函数体
 				return a+b+1;//返回值(调用时给出的结果)
@@ -98,13 +98,26 @@
 			function getSum2(){
 				var sum = 0;
 				for (var i = 1;i <= 100;i++) {
-					if (i % 2 == 1) {
+					if (i % 2 != 0) {
 						sum += i;
 					} 
 				}
 				return sum;
 			}
 			console.log(getSum2());//这里只需要求1-100，所以传空参就行
+			
+			//声明函数：函数表达式(匿名函数)
+			//格式：function (){}
+			var fun = function(){//函数名:fun
+				//函数体
+				console.log("我是函数表达式");
+			}
+			fun();//调用
+			
+			var fun = function(aru){
+				console.log(aru);
+			}
+			fun("输出测试");
 		</script>
 	</body>
 </html>
