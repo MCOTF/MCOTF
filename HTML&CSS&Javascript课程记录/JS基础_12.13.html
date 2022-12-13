@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//对象：object 无序的属性与方法构成的集合
+			//明星不是对象，但蔡徐坤是对象
+			
+			//属性：名词
+			//所谓的属性指事物的特征
+			//方法：动词
+			//所谓的方法指事物的行为
+			
+			//变量：保存的一个值
+			var num = 10;
+			//数组：保存的多个值
+			var arr = ["张三","王五"];
+			//但以数组来保存对象明显不太合适
+			
+			//创建对象的三种方式{}
+			
+			
+			//1.字面量{}：（大括号）
+			//注意：属性或者方法采取的键值对的形式：键(属性):值(属性值)，多个属性或者方法的时候中间要用逗号隔开，方法冒号的后面跟的是一个匿名函数
+			var obj = {//obj：变量名
+				//属性：属性名:属性值,
+				name1 : "迪丽热巴",//name不能作为属性名
+				sex : "女",
+				height : 168,
+				age : 25,
+				//方法：函数名:function(){函数体}
+				sayHi:function(){
+					console.log("Hi~");
+				}
+			}
+			//调用对象
+			console.log(obj);
+			console.log(obj.name1);//对象名.属性值;
+			console.log(obj["age"]);//对象名["属性名"];
+			obj.sayHi();
+			
+			//练习：使用字面量{}创建对象为包子的狗
+			var dog =  {
+				name1 : "包子",
+				type : "柴犬",
+				age : 5,
+				color : "write",
+				skillBark:function(){
+					console.log("汪汪汪");
+				}
+			}
+			//调用方法
+			console.log(dog.name1);
+			dog.skillBark();
+			
+			//2.声明new Object()
+			var obj = new Object();
+			obj.name1 = "张三";
+			obj.age = 20;
+			obj.sex = "男";
+			obj.sayHi = function(){
+				console.log("Hi");
+			}
+			
+			//练习：使用new Object()创建一个鸣人的形象
+			var mingren = new Object();
+			mingren.name1 = "鸣人";
+			mingren.sex = "男";
+			mingren.age = 19;
+			mingren.skill = function(){
+				console.log(mingren.name1+mingren.name1+mingren.name1);//影分身术
+			}
+			
+			//构造函数：复用相同的属性或方法，抽出来重新封装在函数里
+			//如人类的年龄性别姓名
+			//构造函数首字母要求大写(要求)
+			//构造函数不需要return也可以返回结果
+			//调用构造函数时必须使用new关键字，才能生成对象
+			function Star(name1,age,sex){//首字母大写
+				this.name1 = name1;//用this进行替代
+				this.age = age;
+				this.sex = sex;
+				this.sing = function(song){//唱歌的行为
+					console.log(song);
+				}
+			}
+			//3.在构造函数下调用/声明对象
+			var a = new Star("刘德华",20,"男");//必须使用new关键字，才能生成对象
+			var b = new Star("张学友",21,"男");
+			//读取
+			console.log(a);//Star {name1: "刘德华", age: 20, sex: "男", sing: ƒ}
+			//读取数据类型
+			console.log(typeof(a));//Object:对象
+			//如果要返回属性值
+			console.log(a.name1);//对象a的name1
+			console.log(a["age"]);//对象a的age
+			
+			//对象的方法
+			a.sing("冰雨");
+			b.sing("李香兰");
+			
+			//练习:王者荣耀英雄很多，可以利用构造函数创建对象
+			function Wzry(name1,type,blood,attack){
+				this.name1 = name1;
+				this.type = type;
+				this.blood = blood;
+				this.attack = attack;
+			}
+			var a = new Wzry("廉颇","力量型",500,"近战");
+			var b = new Wzry("后羿","射手型",100,"远程");
+			//调用属性:
+			
+			//遍历对象语句:for in
+			//k指关键字key
+			for(var k in a){//a指廉颇
+				console.log(k);//遍历输出k:name1
+				console.log(a[k]);//遍历输出值:廉颇
+			}
+			console.log(a);
+			
+			//练习：创造一个对象，名叫pink，依次遍历输出属性和方法
+			var pink =  {
+				name1 : "pink",
+				age : 18,
+				sayHi:function(){
+					console.log("你好");
+				}
+			}
+			for(var k in pink){
+				console.log(k);
+				console.log(pink[k]);
+			}
+			console.log(a);
+			
+			//练习：创建一个电脑对象，属性：颜色，重量，品牌，型号，方法：可以看电影，听音乐，打游戏，完成使用属性和调用方法
+			var computer = {
+				//属性
+				type : "laptop",
+				color : "black",
+				weight : 1.36,
+				brand : "Banana",
+				model : "Banana15 Pro Max Ultra 1PB",
+				//方法
+				watchMovies:function(){
+					console.log("看电影");
+				},
+				listenMusic:function(){
+					console.log("听音乐");
+				},
+				playGames:function(){
+					console.log("打游戏");
+				},
+			}
+			for(var k in computer){
+				console.log(k+":"+computer[k]);
+			}
+			//
+		</script>
+	</body>
+</html>
