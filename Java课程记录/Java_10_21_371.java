@@ -5,7 +5,7 @@ class Student{
     int age;
     String school="A大学";
     //方法:调用本student类属性
-    public Student (String name,int age){
+    public Student (String name,int  age){
         this.name = name;
         this.age = age;
     }
