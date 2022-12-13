@@ -23,7 +23,7 @@
 			//创建对象的三种方式{}
 			
 			
-			//1.字面量：
+			//1.字面量{}：（大括号）
 			//注意：属性或者方法采取的键值对的形式：键(属性):值(属性值)，多个属性或者方法的时候中间要用逗号隔开，方法冒号的后面跟的是一个匿名函数
 			var obj = {//obj：变量名
 				//属性：属性名:属性值,
@@ -42,7 +42,7 @@
 			console.log(obj["age"]);//对象名["属性名"];
 			obj.sayHi();
 			
-			//练习：使用字面量创建对象为包子的狗
+			//练习：使用字面量{}创建对象为包子的狗
 			var dog =  {
 				name1 : "包子",
 				type : "柴犬",
@@ -56,7 +56,23 @@
 			console.log(dog.name1);
 			dog.skillBark();
 			
+			//2.声明new Object()
+			var obj = new Object();
+			obj.name1 = "张三";
+			obj.age = 20;
+			obj.sex = "男";
+			obj.sayHi = function(){
+				console.log("Hi");
+			}
 			
+			//练习：使用new Object()创建一个鸣人的形象
+			var mingren = new Object();
+			mingren.name1 = "鸣人";
+			mingren.sex = "男";
+			mingren.age = 19;
+			mingren.skill = function(){
+				console.log(mingren.name1+mingren.name1+mingren.name1);//影分身术
+			}
 			
 			
 		</script>
