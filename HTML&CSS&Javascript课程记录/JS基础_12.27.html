@@ -5,6 +5,7 @@
 		<title></title>
 		<style>
 			img{
+				/* 统一高度300px保证美观 */
 				width: 300px;
 			}
 		</style>
@@ -27,6 +28,23 @@
 			picture2.onclick = function(){
 				img.src = "JS外联文件夹/b.png";
 				img.title = "还是me";
+			}
+		</script>
+		
+		<!-- 改变内容element.innerText -->
+		<!-- innerText不识别HTML标签 -->
+		<div>
+			<p id = "1">点我查看今年的时间</p>
+			<strong id = "2">1</strong>
+		</div>
+		<script>
+			var p1 = document.querySelector("p");
+			p1.onclick = function(){//点击更改内容函数
+				p1.innerText = "<p>今年是2022年</p>";//改变文档
+			}
+			var p2 = document.querySelector("strong");
+			p2.onclick = function(){
+				p2.innerHTML = "<p>此文本通过js脚本更改</p>";
 			}
 		</script>
 	</body>
