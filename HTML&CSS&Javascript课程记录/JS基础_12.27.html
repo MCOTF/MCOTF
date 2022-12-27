@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			img{
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<button id = "a">图片a</button>
+		<button id = "b">图片b</button>
+		<div>
+			<img src="JS外联文件夹/a.png" alt="阿凡达">
+		</div>
+		<script>
+			var picture1 = document.getElementById("a");
+			var picture2 = document.getElementById("b");
+			//事件操作
+			var img = document.querySelector("img");//标记img
+			picture1.onclick = function(){
+				img.src = "JS外联文件夹/a.png";
+				img.title = "me";
+			}
+			picture2.onclick = function(){
+				img.src = "JS外联文件夹/b.png";
+				img.title = "还是me";
+			}
+		</script>
+	</body>
+</html>
