@@ -40,15 +40,18 @@
 		<script>
 			var p1 = document.querySelector("p");
 			p1.onclick = function(){//点击更改内容函数
-				p1.innerText = "<p>今年是2022年</p>";//改变文档,但innerText不识别标记
+				p1.innerText = "<p>今年是2022年(P标签名仍旧存在)</p>";//改变文档,但innerText不识别标记
 			}
 			var p2 = document.querySelector("strong");
 			p2.onclick = function(){
-				p2.innerHTML = "<p>此文本通过js脚本更改，</p>";//改变文档,但innerText不识别标记
+				p2.innerHTML = "<p>此文本通过js脚本更改(P标签名不存在)</p>";//改变文档,但innerText不识别标记
 			}
 		</script>
 		
 		<button>按钮</button>
 		<input type="text" value="输入内容" >
+		<script>
+			
+		</script>
 	</body>
 </html>
