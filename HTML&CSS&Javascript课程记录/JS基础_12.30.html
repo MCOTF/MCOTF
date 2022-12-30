@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		矩形的长: <input id="chang" /><br/>
+		矩形的宽: <input id="kuan" /><br/>
+		矩形的周长: <input id="zhouchang" /><br/>
+		矩形的面积: <input id="size" /><br/>
+		<button onclick="changeVal()">计算</button>
+		<script>
+			function changeVal(){
+				var chang = document.getElementById("chang").value;
+				var kuan  = document.getElementById("kuan").value;
+				var zhouchang = document.getElementById("zhouchang").value = (parseInt(chang) + parseInt(kuan))*2;
+				var size = document.getElementById("size").value = parseInt(chang) * parseInt(kuan);
+			}
+			
+		</script>
+		
+		<script>
+			//蜗牛白天爬3米，晚上掉两米，蜗牛几天能爬到10米
+			var meter = 0;
+			var noon = 0;
+			var night = 0;
+			var day = 0;
+			while(meter <= 10){
+				noon++;
+				meter +=3;
+				day += 0.5;
+				if(meter >= 10){
+					break;
+				}
+				night++;
+				meter -=2;
+				day += 0.5;
+			}
+			console.log("蜗牛爬了"+day+"天");
+		</script>
+		
+		<script>
+			//判断如果a>60,则i=1;如果a>70,则i=2;如果a>80,则i=3;如果a>90,则i=4。编程全部网页代码。
+			var i = 0;
+			var a = 91;
+			if(a>90){
+				i = 4;
+			}else if(a>80){
+				i = 3;
+			}else if(a>70){
+				i = 2;
+			}else {
+				i = 1
+			}
+			console.log(i);
+		</script>
+		
+		<script>
+			//将标题“欢迎访问明日公司网站”连续循环出现3次。编程写出JS部分代码即可。
+			for(var i = 0;i<3;i++){
+				console.log("欢迎访问明日公司网站");
+			}
+		</script>
+		
+		<script>
+			//编写一个程序,计算增加后的工资。要求基本工资大于等于1000元,增加20%工资;若小于1000元,且大于等于800元,则增加15%;若小于800,则增加10%工资。编程写出JS部分代码即可。
+			var gz = 1000;
+			if (gz >= 1000) {
+				gz+=gz*0.2;
+			} else if(gz <1000 && gz<=800){
+				gz+=gz*0.15;
+			} else {
+				gz+=gz*0.1;
+			}
+			console.log(gz);
+		</script>
+		
+		<script>
+			// 编程求如下二维数组每一行的平均值：
+			// grades=[[1],[1,2],[1,2,3],[1,2,3,4,5]]。
+			// 如果还要求每一行的最大最小值，程序该如何写？
+			var grades=[
+				[1],
+				[1,2],
+				[1,2,3],
+				[1,2,3,4,5],
+				];
+			console.log(grades.length);
+			var max = 0;
+			var a = 1;
+			for(var i = 0;i < grades.length;i++){
+				var sum = 0;//生成sum并在每次循环中刷新
+				// max = 0;//刷新max，不过本题不需要
+				var min = 2147483648;//刷新min
+				for(var j = 0;j < grades[i].length;j++){
+					sum += grades[i][j];
+					
+					if(max < grades[i][j]){//最大值判断
+						max = grades[i][j];
+					}
+					if(min > grades[i][j]){//最小值判断
+						min = grades[i][j];
+					}
+				}
+				console.log("第"+parseInt(i+1)+"行的最大值为："+max+"，平均值为："+ sum/a++ +"最小值为："+min);
+			}
+		</script>
+		
+		<script>
+			
+		</script>
+	</body>
+</html>
