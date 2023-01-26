@@ -42,5 +42,6 @@ public class Java_11_11 {
     public static void main(String[] args) {
         Dog1111 dog1 = new Dog1111("狗1",12,"red");
         System.out.println(dog1.info());//简化后的info需要走一个print，否则无结果
+
     }
 }
