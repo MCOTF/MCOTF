@@ -10,10 +10,13 @@
 			// $("#app ul li.spec").html("你好");//div还未执行，所以找不到app
 			
 			//使（DOM）页面加载完成之后再执行大括号中的代码
-			//故先执行 你好2 后再执行 你好1
-			$(document).ready(function(){
+			//故先执行 你好2 后再执行 你好1 再执行 你好3
+			$(document).ready(function(){//没有名字的叫做匿名函数
 				$("#app ul li.spec").html("你好1");
-			})
+			});
+			$(function(){//简化方式
+				$("#app ul li.spec").html("你好3");
+			});
 		</script>
 	</head>
 	<body>
