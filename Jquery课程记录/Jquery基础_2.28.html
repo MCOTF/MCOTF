@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+		<script type="text/javascript">
+			
+			alert($);//引入js测试
+			// $("#app ul li.spec").html("你好");//div还未执行，所以找不到app
+			
+			//使页面加载完成之后再执行大括号中的代码
+			//故先执行 你好2 后再执行 你好1
+			$(document).ready(function(){
+				$("#app ul li.spec").html("你好1");
+			})
+		</script>
+	</head>
+	<body>
+		<div id='app'>
+			<ul>
+				<li class="spec">123</li>
+			</ul>
+		</div>	
+		<script type="text/javascript">
+			$("#app ul li.spec").html("你好2");//选择
+			//app-ul-li(spec):逐步选择
+		</script>
+	</body>
+</html>
