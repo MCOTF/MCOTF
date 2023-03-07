@@ -4,10 +4,34 @@
 		<meta charset="utf-8">
 		<title>计算机一班MCOTF__ST</title>
 		<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+		
 		<script type="text/javascript">
+			//jquery通过调用方法来操作元素，而js是单独设置
+			
+			//获取div的类数组
 			$(document).ready(function(){
 				var $box = $(".box");//进入body的box类
 				console.log($box);//控制台输出
+				
+				// 根据下标获取元素并修改
+				$box[0].style.backgroundColor = "black";//backgroundColor注意大小写
+				$box[1].style.backgroundColor = "red";
+				$box[2].style.backgroundColor = "green";
+				
+				// 获取jQuery对象含有html元素的数量
+				var length = $box.length;
+				$box[length-1].style.backgroundColor = "blue";
+				// 即内容
+				
+				// 使用jQuery方式批量更改
+				$box.css({"background":"blue",});
+				
+				//jquery别名$-->jQuery
+				console.log($ == jQuery);
+				
+				//使$不再生效
+				var xx = $.noConflict();//$变成了xx，以xx开头仍能可以
+				
 			});
 		</script>
 		<style type="text/css">
@@ -26,24 +50,20 @@
 		</style>
 	</head>
 	<body>
-		<p></p>
-		<p></p>
-		<p></p>
-		<p></p>
-		<p></p>
+		
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
 		<script>
+			
 			// 选择器$(),$()会返回一个对象，这个对象被成为jQuery对象
-			$("p").css({
-				"width":60,
-				"height":60,
+			$("div").css({
+				// "width":60,
+				// "height":60,
 				"background-color":"orange",
 			});
 		</script>
-		<div class="box"></div>
-		<div class="box"></div>
-		<div class="box"></div>
-		<div class="box"></div>
-		<div class="box"></div>
-		
 	</body>
 </html>
