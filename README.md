@@ -18,6 +18,8 @@
 -	**[[Java课程记录]](https://gitee.com/MCOTF/course-code/tree/master/Java%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95)**:涵盖了java的一些基础代码，从HelloWorld到构造方法均有案例代码。
 - 	**[[SQL查询课程记录]](https://gitee.com/MCOTF/course-code/tree/master/SQL%E6%9F%A5%E8%AF%A2%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95)**:以SSMS平台编写的适用于SQL Server的查询代码，理论也可在MySQL等平台使用
 -	**[[HTML&CSS&Javascript课程记录]](https://gitee.com/MCOTF/course-code/tree/master/HTML&CSS&Javascript%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95)**:通常为各种HTML实例，一般会有部分行内式与内嵌式CSS代码，后期会跟进Javascript。
+- 	本学期新增PHP课程记录，JSP课程记录，jQuery课程记录，安卓范例则放在了另一个仓库里
+- 	
 
 #### 软件下载
 
@@ -26,6 +28,10 @@
 -   [Python IDE](https://www.python.org/downloads/)
 -   [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 -   [HbuilderX](https://dcloud.io/hbuilderx.html)
+-   [XAMPP](https://www.apachefriends.org/zh_cn/index.html)
+-   [jQuery](https://jquery.com/download/)
+-   [intellJ IDEA](https://www.jetbrains.com/zh-cn/idea/download/#section=windows)
+-   [Apache Tomcat 10](https://tomcat.apache.org/download-10.cgi)
 
 #### 推荐链接
 -	[我的B站主页](https://space.bilibili.com/19200133)
@@ -33,6 +39,8 @@
 -	[菜鸟教程](https://www.runoob.com/)
 -	[安装并使用eclipse](https://zhuanlan.zhihu.com/p/146333721)
 -	[安装并使用hbuilderx](https://zhuanlan.zhihu.com/p/131649354)
+-	[XAMPP部署教程](https://blog.csdn.net/yang_yang_heng/article/details/108521727)
+-	[建立IDEA Java Web项目](https://blog.csdn.net/yuyunbai0917/article/details/122823288)
 
 #### 使用说明
 
