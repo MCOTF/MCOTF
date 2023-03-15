@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.6.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// jquery选择器：id选择器，class类选择器
+			// class类选择器
+			
+			$(document).ready(function(){
+				// 选择box类的所有元素（通过class类获取jquery对象）
+				var box = $(".box");
+				console.log(box);
+				// 通过id获取jquery对象
+				var $name1 = $("#name");
+				console.log($name1);
+				// val方法获取输入框的值
+				var name =$("#name").val();
+				console.log(name);
+				
+			});
+			//输入框校验
+			function save(){
+				var name = $("#name").val("执行val方法并把123覆写掉");
+				if(name == "123"){
+					console.log("返回结果："+name);
+					console.log("返回正确(console.log)");
+					alert("值为123,返回正确(alert)")
+				}else{//执行val函数下的结果
+					console.log("返回结果："+name);
+					alert(name);
+					$("#name").val("");//结果置空
+					console.log("清空："+name);
+				}
+			}
+			
+		</script>
+		<style type="text/css">
+			.box{
+				width: 60px;
+				height: 120px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		
+		<input id="name" type="text" value="123"/>
+		<input type="button" value="保存" onclick="save()"/>
+		
+		<input id="name2" type="text" value="456"/>
+		<input type="button" value="保存2" onclick="save2()"/>
+		<script>
+			//输入框校验2
+			
+			
+			//如何判断输入框为空
+			function save2(){
+				var name2 = $("#name2").val();
+				var length2 = name2.length;
+				console.log("输入框2内容为："+name2+"，长度值已获取：值为"+length2);
+				if(name2 == ""){
+					alert("内容不能为空");
+					return;//因为有毛病所以就返回了，让用户重新输入
+				}
+				if(length2 > 3){
+					console.log("内容不能超过3个字符");
+					return;
+				}
+				console.log("save2保存成功");
+				
+			}
+		</script>
+	</body>
+</html>
