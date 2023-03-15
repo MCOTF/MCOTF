@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%--
   Created by IntelliJ IDEA.
   User: MCOTF--ST
