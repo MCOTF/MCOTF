@@ -19,7 +19,7 @@
 					return;
 				}
 				if(length <= 20){
-					console.log("校验通过");
+					console.log("校验通过(name<=20)");
 				}else {
 					alert("姓名不能超过20个字符");
 					return;
@@ -32,7 +32,7 @@
 					return;//因为有毛病所以就返回了，让用户重新输入
 				}
 				if(length == 15){
-					console.log("校验通过");
+					console.log("校验通过(id=15)");
 				}else {
 					alert("学号需要15个字符");
 					return;
@@ -51,9 +51,23 @@
 		</style>
 	</head>
 	<body>
-		姓名：<input id="name" type="text" value="蔡徐坤"/><br>
-		学号：<input id="id" type="text" value="唱跳rap篮球鸡你太美鸡你太美"/><br>
-		<input class="btn" type="button" value="保存" onclick="save()"/>
-		<input class="btn" type="button" value="重置" onclick="reset()"/>
+		<table>
+			<tr>
+				<td>姓名：</td>
+				<td><input id="name" type="text" value="蔡徐坤"/></td>
+			</tr>
+			<tr>
+				<td>学号：</td>
+				<td><input id="id" type="text" value="唱跳rap篮球鸡你太美鸡你太美"/></td>
+			</tr>
+			<tr>
+				<td rowspan="2" style="text-align: center;">
+					<input class="btn" type="button" value="保存" onclick="save()"/>
+					<input class="btn" type="button" value="重置" onclick="reset()"/>
+				</td>
+			</tr>
+		</table>
+		
+		
 	</body>
 </html>
