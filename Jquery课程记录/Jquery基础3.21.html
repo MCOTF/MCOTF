@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+		<script type="text/javascript">
+			function save(){
+				var name = $("#name").val();
+				var length_name = name.length;
+				console.log("姓名的内容为："+name+"，长度值已获取：值为"+length_name);
+				var id = $("#id").val();
+				var length = id.length;
+				console.log("学号的内容为："+id+"，长度值已获取：值为"+length);
+				
+				//姓名判断
+				if(name == ""){
+					alert("姓名不能为空");
+					return;
+				}
+				if(length <= 20){
+					console.log("校验通过");
+				}else {
+					alert("姓名不能超过20个字符");
+					return;
+				}
+				// alert("保存成功");//姓名保存成功的提示
+				
+				//学号判断
+				if(id == ""){
+					alert("学号不能为空");
+					return;//因为有毛病所以就返回了，让用户重新输入
+				}
+				if(length == 15){
+					console.log("校验通过");
+				}else {
+					alert("学号需要15个字符");
+					return;
+				}
+				alert("保存成功");
+			}
+			function reset(){
+				$("#name").val("");
+				$("#id").val("");
+			}
+		</script>
+		<style>
+			.btn{
+				margin: 5px auto;
+			}
+		</style>
+	</head>
+	<body>
+		姓名：<input id="name" type="text" value="蔡徐坤"/><br>
+		学号：<input id="id" type="text" value="唱跳rap篮球鸡你太美鸡你太美"/><br>
+		<input class="btn" type="button" value="保存" onclick="save()"/>
+		<input class="btn" type="button" value="重置" onclick="reset()"/>
+	</body>
+</html>
