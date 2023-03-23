@@ -51,3 +51,30 @@ $a--;//后递减
 
 
 ?>
+<?
+//php练习
+print("hello world");
+echo "<br>";
+?>
+<?
+$number = "16";
+$number2 = "12";
+echo $number.$number2;
+?>
+<?
+echo "<br>";
+echo strlen("hello world");
+echo "<br>";
+echo strpos("hello world",'o');
+?>
+<?
+echo "<br>";
+$d=date("D");
+if ($d=="Fri") {
+    echo "Hello<br/>";
+    echo "Have a nice day!";
+} else {
+    echo "Today is ".$d."<br/>";
+}
+
+?>
