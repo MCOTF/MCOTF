@@ -4,11 +4,41 @@
 		<meta charset="utf-8">
 		<title></title>
 		<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
-		<script>
-			
+		<script type="text/javascript">
+			//标签选择器
+			$(document).ready(function(){//匿名函数
+				//通过标签选择器 获取jquery对象 设置背景色
+				$("div").css("background-color","gray");
+				
+				$("p").css("background-color","blanchedalmond");//标签选择器
+				
+				$("div p").css("background-color","black");//层级选择器(空格)：div标签 下 的子标签p
+				
+				$("div,p").css("background-color","blue");//多选择器(,)：所有的div 和 所有的p标签
+				
+				$(".divClass").css("background","brown");//class类选择器
+				
+				//jQuery自创选择器
+				
+			});
 		</script>
+		<style type="text/css">
+				
+			div{
+				width: 200px;
+				height: 200px;
+				margin: 10px;
+			}
+		</style>
 	</head>
 	<body>
-		
+		<div style="width: 300px;height: 300px;">
+			盒子1
+		</div>
+		<div><p>子标签盒子2</p></div>
+		<p>p标签3</p>
+		<div class="divClass">
+			带class的div盒子
+		</div>
 	</body>
 </html>
