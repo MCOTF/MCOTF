@@ -13,8 +13,11 @@
 </head>
 <body>
 <%
-    //接收传递的参数值zhangsan赋给了name变量
+    //request内置对象getParameter接收传递的参数值zhangsan赋给了name变量
     String name = request.getParameter("uname");//3.22的param name="sname"
+
+    request.setCharacterEncoding("UTF-8");//改变编码格式
+
     String pwd = request.getParameter("upwd");
     out.print("你好！"+name+"<br>"+"你的密码是："+pwd);
 %>

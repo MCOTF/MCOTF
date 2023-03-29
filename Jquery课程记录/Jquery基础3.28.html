@@ -18,27 +18,96 @@
 				
 				$(".divClass").css("background","brown");//class类选择器
 				
-				//jQuery自创选择器
+			});
+			
+			$(document).ready(function(){
+				$("div,p").css("background-color","whilte");
+				//jQuery自创选择器，根据序号获取
+				
+				//方法1：先获取列表
+				$("div:eq(0)").css("background-color","gold");//获取div第0个元素（先获取元素）
+				
+				//方法2：作为eq方法
+				$("div").eq(1).css("background-color","cadetblue");//获取div第一个元素
+				$("div").eq(-1).css("background-color","pink");//获取div倒数第一个元素
+				//tips:也可以获取class类
+				
+				//gt：greater than大于(>)
+				$("div:gt(4)").css("background-color","red");
+				//lt：less than小于(<)
+				$("div:lt(2)").css("background-color","gray");
+				
+				//odd：奇数行（从1开始）
+				$("tr:odd").css("background-color","aqua");
+				//even：偶数行（从0开始）
+				$("tr:even").css("background-color","pink");
+				
+				//not选择器:以非的形式，除值以外的，相当于写了一个伪类
 				
 			});
 		</script>
 		<style type="text/css">
 				
 			div{
+				/* 基础div属性 */
 				width: 200px;
 				height: 200px;
 				margin: 10px;
 			}
+			td{
+				width: 100px;
+				border: 1px dotted gray;
+				text-align: center;
+			}
+			table{
+				/* 两条边框合并成一条边框 */
+				border-collapse: collapse;
+			}
+			
+			
+			
 		</style>
 	</head>
 	<body>
+		<p>p标签</p>
 		<div style="width: 300px;height: 300px;">
 			盒子1
 		</div>
 		<div><p>子标签盒子2</p></div>
-		<p>p标签3</p>
+		
 		<div class="divClass">
 			带class的div盒子
 		</div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<!-- table:表格 tr:行 td:列 -->
+		<table border="1">
+			<tr>
+				<td>姓名</td>
+				<td>学号</td>
+			</tr>
+			<tr>
+				<td>小明</td>
+				<td>0001</td>
+			</tr>
+			<tr>
+				<td>小花</td>
+				<td>0002</td>
+			</tr>
+			<tr>
+				<td>小红</td>
+				<td>0003</td>
+			</tr>
+			<tr>
+				<td>小明</td>
+				<td>0004</td>
+			</tr>
+			<tr>
+				<td>小明</td>
+				<td>0005</td>
+		</table>
 	</body>
 </html>
