@@ -23,8 +23,9 @@
 %>
 <jsp:forward page="JSP_3.29_3.jsp"/>
 <%
-    }else
-        out.print("登录成功！你的用户名是"+username+"你的密码是"+password);
+    }else{
+        out.print("登录成功！<br>你的用户名是"+username);
+        out.print("你的密码是"+password);
     }
 %>
 </body>
