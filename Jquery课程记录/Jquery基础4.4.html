@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.6.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){//ready()等待dom执行完成后再执行ready内的方法
+				$("div").css("border","2px solid green");//jquery方式添加css属性
+				//目的：鼠标放上去就更改样式可以做到动态改变
+				
+				
+				//json格式{}
+				$(".box").css({
+					"width" : "200px", //加空格方便规范
+					"height" : "100px", //逗号做分隔
+					
+					
+					});
+					
+				//addClass:为所有div标签添加box2类
+				$("div").addClass("box2");
+				//removeClass则是删除box2类
+				$("div").removeClass("box2");
+				
+				//绑定单击事件(点击监听)
+				$("#savebox").click(function(){
+					if(confirm("是否保存？")){//使用if特性制作保存框
+						alert("保存成功");
+						
+					}else{
+						//hide():隐藏
+						$("img").hide();//隐藏
+					}
+					
+				});
+				
+				
+				$("#savebox").css("width","100px");
+				
+				
+				
+				
+				//先绑定image
+				$("#savebox img").mouseover(function(){//鼠标移至元素执行方法mouseover
+					//attr修改属性
+					$("#savebox img").attr("src","../HTML&CSS&Javascript课程记录/JS外联文件夹/b.png");//改变图片
+				});
+				$("#savebox img").mouseout(function(){//鼠标离开元素执行方法mouseout
+					//attr修改属性
+					$("#savebox img").attr("src","../HTML&CSS&Javascript课程记录/JS外联文件夹/a.png");//改变图片
+				});
+				
+				
+				
+				//绑定单击事件(点击监听)
+				$("#box3").click(function(){
+					if(confirm("是否显示？","显示","隐藏")){//使用if特性制作保存框
+						$("img").show();//显示
+						
+					}else{
+						//hide():隐藏
+						$("#box3 img").hide();//隐藏
+					}
+					
+				});
+				
+			});
+			
+			function save(){//save可以写在ready()外面
+				alert("保存成功");
+			}
+			
+			
+			
+			
+			// $(document).ready(function(){
+				
+			// 	$("#box").animate({
+			// 		"left":2300,
+			// 		"top":1000,
+					
+			// 	},1000,function(){
+			// 		$(this).css("background-color","pink");
+			// 	});
+				
+			// 	$("#box1").delay(2000).animate({
+			// 		"left":2000,
+			// 	},1000,function(){
+			// 		$(this).css("background-color","blue");
+			// 	});});
+				
+		</script>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: lawngreen;
+				margin: 10px;
+				/* border: 2px solid green; */
+			}	
+			.box2{
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				
+			}
+			#savebox{
+				
+				border-radius: 20px;
+				text-align: center;
+				text-size
+			}
+			img{
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="确定" onclick="save()"/>
+		
+		<div class="box" id="box"></div>
+		<div class="box" id="savebox"><img src="../HTML&CSS&Javascript课程记录/JS外联文件夹/a.png"/></div>
+		<div class="box" id="box3"><img src="../HTML&CSS&Javascript课程记录/JS外联文件夹/a.png" style="display: none;"/>这里有一个图片，点我显示</div>
+		<div class="box" id="box4"></div>
+		<div class="box" id="box5"></div>
+		
+	</body>
+</html>
