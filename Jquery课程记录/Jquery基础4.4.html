@@ -9,13 +9,10 @@
 				$("div").css("border","2px solid green");//jquery方式添加css属性
 				//目的：鼠标放上去就更改样式可以做到动态改变
 				
-				
 				//json格式{}
 				$(".box").css({
 					"width" : "200px", //加空格方便规范
 					"height" : "100px", //逗号做分隔
-					
-					
 					});
 					
 				//addClass:为所有div标签添加box2类
@@ -27,19 +24,14 @@
 				$("#savebox").click(function(){
 					if(confirm("是否保存？")){//使用if特性制作保存框
 						alert("保存成功");
-						
 					}else{
 						//hide():隐藏
 						$("img").hide();//隐藏
 					}
-					
 				});
 				
 				
 				$("#savebox").css("width","100px");
-				
-				
-				
 				
 				//先绑定image
 				$("#savebox img").mouseover(function(){//鼠标移至元素执行方法mouseover
@@ -51,13 +43,10 @@
 					$("#savebox img").attr("src","../HTML&CSS&Javascript课程记录/JS外联文件夹/a.png");//改变图片
 				});
 				
-				
-				
 				//绑定单击事件(点击监听)
 				$("#box3").click(function(){
 					if(confirm("是否显示？","显示","隐藏")){//使用if特性制作保存框
 						$("img").show();//显示
-						
 					}else{
 						//hide():隐藏
 						$("#box3 img").hide();//隐藏

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.6.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				//html():设置标签中的内容，可写标签（一般情况不推荐，js写html内容太逆天了）
+				$("div").html("今天天气好晴朗，处处好风光");
+				$("div").html("<input type='button' value='保存'/>");//可以写标签
+				
+				//text():设置标签中的内容，仅能写文字
+				$("div").text("尘土飞扬");//执行text后，div中的html被覆盖了
+				$("div").text("<input type='button' value='保存'/>");//只能写文本
+				
+				//append():如果不想覆盖
+				$("div").append("6666666666");//追加标签内容，并未覆盖掉text的内容
+				$("div").append("<input type='button' value='保存'/>");//也可以写标签
+				
+				
+				//each():遍历，分别处理每一个元素
+				$("p").each(function(){
+					//遍历每一个元素的代码
+					$(this).html($(this).index());//获取当前(this)元素的序号(index)
+				});
+				
+			});
+		</script>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- index 0 -->
+		<div></div>
+		
+		<!-- index 1-5 -->
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		
+	</body>
+</html>
