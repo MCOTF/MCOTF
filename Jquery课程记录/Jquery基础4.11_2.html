@@ -9,23 +9,26 @@
 				
 				var $carousel = $("#myCarousel");
 				
-				var $left_btn = $("#myCarousel.carousel_btns.left");
-				var $right_btn = $("#myCarousel.carousel_btns.right");
-				var $carousel_images_lis = $("myCarousel.carousel_images li");
-				var $carousel_nav_lis = $("myCarousel.carousel_nav li");
+				var $left_btn = $("#myCarousel .carousel_btns .btn_left");
+				var $right_btn = $("#myCarousel .carousel_btns .btn_right");
+				var $carousel_images_lis = $("#myCarousel .carousel_images ul li");
+				var $carousel_nav_lis = $("#myCarousel .carousel_nav ol li");
 				
 				//信号量
 				var idx = 0;
 				//图片总数	
 				var picAmount = $carousel_images_lis.length;
+				// var picAmount = 4;
 				
 				//setInterval()定时器,定时任务
 				var timer = setInterval($right_btn_handler , 1000);//1s
 				
 				$carousel.mouseover(function(){
+					//移至图片暂停轮询
 					clearInterval(timer);
 				}).mouseout(function(){
-					timer = setInterval($$right_btn_handler , 1000);
+					//离开图片恢复切换
+					timer = setInterval($right_btn_handler , 1000);
 				});
 				
 				//右按钮的监听
@@ -33,7 +36,6 @@
 				
 				//事件处理函数
 				function right_btn_handler(){
-					idx++;
 					idx++;
 					if(idx > picAmount - 1){
 						idx = 0;
@@ -51,7 +53,7 @@
 				
 				$carousel_nav_lis.mouseover(function(){
 					idx = $(this).index();
-					showPicAndSetCircles()
+					showPicAndSetCircles();
 				});
 				
 				
@@ -62,7 +64,7 @@
 				}
 			});
 
-
+		
 		</script>
 		<style type="text/css">
 			/* 所有元素周围没有边距 */
@@ -84,11 +86,12 @@
 				/* 不显示序列标志（黑点） */
 				list-style: none;
 			}
-			.carousel .carousel_images ul li{
+			/* .carousel .carousel_images ul li{
 				display: none;
-			}
+			} */
 			.carousel .carousel_images ul li.cur{
-				display: block ! important;
+				/* display: block ! important; */
+				display: block !important;
 			}
 			.carousel .carousel_images ul li img{
 				width: 270px;
@@ -118,6 +121,8 @@
 				background-color: darkred;
 			}
 			
+			
+			/* 左右按钮 */
 			.carousel .carousel_btns .btn{
 				position: absolute;
 				width: 40px;
@@ -135,7 +140,7 @@
 				top: 50%;
 				right: 0;
 				margin-top: -20px;
-				margin-left: -20px;
+				margin-right: -20px;
 			}
 		</style>
 	</head>
