@@ -1,4 +1,4 @@
-## [各学科课程代码 By-MCOTF__ST(计1S/Smotrit)](https://gitee.com/MCOTF/course-code)
+## [各学科课程代码 By-MCOTF__ST](https://gitee.com/MCOTF/course-code)
 
 <p align="center">
 <img src="SQL查询课程记录/MCOTF-01.png"/> 
