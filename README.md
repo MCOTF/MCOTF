@@ -4,7 +4,7 @@
 <img src="SQL查询课程记录/MCOTF-01.png"/> 
 </p>
 
->```使用方法：文件-导入-从Git导入，或者你直接复制代码也行。代码有问题再来找我，其他的我不管，对我来说教小白是一件麻烦高血压且不讨好的事情，教好了对自己没好处，教不好自己害得挨骂，闲得蛋疼才教你。```
+>```使用方法：文件-导入-从Git导入，或者你直接复制代码也行。代码有问题再来找我，其他的我不管，对我来说教小白是一件麻烦高血压且不讨好的事情。```
 > ——《MCOTF__ST》
 
 #### 介绍
@@ -24,14 +24,15 @@
 #### 软件下载
 
 -   [Java Development Kit 8(JDK8)](https://www.oracle.com/java/technologies/downloads/#java8)
--   [Eclipse](https://www.eclipse.org/downloads/)
+	-   [Eclipse](https://www.eclipse.org/downloads/)
+	-   [intellJ IDEA](https://www.jetbrains.com/zh-cn/idea/download/#section=windows)
+		-   [Apache Tomcat 10](https://tomcat.apache.org/download-10.cgi)
+-   [HbuilderX](https://dcloud.io/hbuilderx.html)
+	-   [jQuery](https://jquery.com/download/)
 -   [Python IDE](https://www.python.org/downloads/)
 -   [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
--   [HbuilderX](https://dcloud.io/hbuilderx.html)
+
 -   [XAMPP](https://www.apachefriends.org/zh_cn/index.html)
--   [jQuery](https://jquery.com/download/)
--   [intellJ IDEA](https://www.jetbrains.com/zh-cn/idea/download/#section=windows)
--   [Apache Tomcat 10](https://tomcat.apache.org/download-10.cgi)
 
 #### 推荐链接
 -	[我的B站主页](https://space.bilibili.com/19200133)
