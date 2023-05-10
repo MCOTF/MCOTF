@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+		<script type="text/javascript">
+			// 轮播图列表
+			var $imageList;
+			// 轮播图序号
+			var index=0;
+			// 轮播定时
+			var timer;
+			// 圆圈列表
+			var $circleList;
+			$(document).ready(function() {
+				// 获取轮播图列表
+				$imageList = $("ul li");
+				// 获取圆圈列表
+				$circleList = $("ol li");
+				// 设置定时器
+				timer = setInterval(iamge_right, 1);
+				
+				// 右击按钮
+				$(".btn_right").click(function() {
+					clearInterval(timer);//清除定时器，不加此功能会乱跳
+					iamge_right();
+					timer = setInterval(iamge_right, 2000);
+				});
+				// 左击按钮
+				$(".btn_left").click(function() {
+					clearInterval(timer);
+					iamge_left();
+					timer = setInterval(iamge_right, 2000);
+				});
+				
+				
+				// 鼠标移至圆圈上
+				$circleList.mouseover(function() {
+					clearInterval(timer);
+					index = $(this).index();
+					show_image();
+				});
+				// 鼠标离开圆圈
+				$circleList.mouseout(function() {
+					timer = setInterval(iamge_right, 2000);
+				});
+				
+			});
+			// 向左播放
+			function iamge_left() {
+				index--;
+				if(index < 0) {
+					index = $imageList.length-1;
+				}
+				show_image();
+			}
+			// 向右轮播方法
+			function iamge_right() {
+				index++;
+				if(index > $imageList.length-1) {
+					index = 0;
+				}
+				show_image();
+			}
+			// 显示轮播图方法
+			function show_image() {
+				$imageList.eq(index).addClass("cur").siblings().removeClass("cur");
+				$circleList.eq(index).addClass("curCircle").siblings().removeClass("curCircle");
+			}
+		</script>
+		<style type="text/css">
+			.carousel {
+				width: 280px;
+				height: 498px;
+				background-color: gray;
+				position: relative;
+				margin: 50px auto;
+			}
+			ul {
+				list-style: none;
+			}
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			ul li {
+				display: none;
+			}
+			.cur {
+				display: block;
+			}
+			.btn {
+				width: 40px;
+				height: 40px;
+				background-color: darkorange;
+				border-radius: 20%;
+				opacity: 0.6;
+				position: absolute;
+				top: 50%;
+				margin-top: -20px;
+			}
+			.btn_left {
+				left: 0px;
+				margin-left: -20px;
+			}
+			.btn_right {
+				right: 0px;
+				margin-right: -20px;
+			}
+			.carousel_circle {
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				width: 80px;
+				height: 20px;
+			}
+			ol {
+				list-style: none;
+			}
+			ol li {
+				width: 16px;
+				height: 16px;
+				background-color: gray;
+				border-radius: 50%;
+				float: left;
+				margin-right: 10px;
+			}
+			.curCircle {
+				background-color: darkred;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="carousel">
+			<!-- 图片div -->
+			<div class="carousel_image">
+				<ul>
+					<li class="cur">
+						<img src="js/0.jpg"/>
+					</li>
+					<li>
+						<img src="js/1.jpg"/>
+					</li>
+					<li>
+						<img src="js/2.jpg"/>
+					</li>
+					<li>
+						<img src="js/3.jpg"/>
+					</li>
+					<li>
+						<img src="js/4.jpg"/>
+					</li>
+				</ul>
+			</div>
+			<!-- 左右按钮 -->
+			<div class="carousel_btn">
+				<div class="btn btn_left"></div>
+				<div class="btn btn_right"></div>
+			</div>
+			<!-- 圆点 -->
+			<div class="carousel_circle">
+				<ol>
+					<li class="curCircle"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+		</div>
+	</body>
+</html>

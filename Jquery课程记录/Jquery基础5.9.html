@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+		<script type="text/javascript">
+			//轮播图列表
+			var $unit;
+			//图片序号
+			var index = 0;
+			//定时器
+			var timer;
+			//圆圈列表
+			var $circleList;
+			//最外层div
+			var $carousel;
+			
+			// 图片最大下标
+			var maxIndex;
+			
+			// 右按钮
+			var $rightBtn;
+			// 左按钮
+			var $leftBtn;
+			$(document).ready(function(){
+				//获取轮播图列表
+				$unit = $("#unit");
+				// 获取图片列表最大下标
+				maxIndex = $("ul li").length-1;
+				
+				
+				
+				
+				//设置定时器
+				timer = setInterval(right,2000);
+				
+				//获取第一个图片复制到列表最后
+				$unit.children("li:first").clone().appendTo($unit);
+				//获取圆圈列表
+				$circleList = $("ol li");
+				
+				//获取最外层div						   
+				$carousel = $("#carousel");	
+				$carousel.mouseover(function() {
+					//清空定时器
+					clearInterval(timer);
+				});
+				$carousel.mouseout(function() {
+					// 设置定时器
+					timer = setInterval(right, 2000);			   
+				});
+				
+				//圆圈列表添加鼠标移至事件
+				$circleList.mouseover(function(){
+					index = $(this).index();
+					
+					$unit.stop(true).animate({
+						"left": -560*index
+					},400,function(){
+						//移动圆圈列表
+						$circleList.eq(index).addClass("cur").siblings().removeClass("cur");
+					});
+					
+				});
+				
+				// 获取右按钮
+				$rightBtn = $("#rightBtn");
+				$rightBtn.click(right);//需要避免动画积累
+				// 获取左按钮
+				$leftBtn = $("#leftBtn");
+				$leftBtn.click(leftclick);
+				
+			});
+			
+			//图片向右执行动画
+			function right(){
+				
+				//修改序号，递增
+				index++;
+				
+				$unit.animate({
+					"left": -560*index
+				}, 400, function(){
+					if(index > 4) {  //大于最后一个图片时，瞬间移动到第一个图片位置
+						index = 0;
+						$unit.css("left", "0px");
+					}
+					//移动圆圈列表
+					$circleList.eq(index).addClass("cur").siblings().removeClass("cur");
+				});
+				
+				
+				
+			}
+			function leftclick(){
+				if($unit.is(":animated")){
+					return;
+				}
+				index--;
+				if(index < 0){ //图片下标小于0时，瞬间移至最后一张复制的图片，原图片最大下标赋值给index，再执行动画
+					$unit.css("left",-560*(maxIndex+1));
+					index = maxIndex;
+				}
+				$unit.animate({
+					"left":-560*index
+					},400,function(){
+					$circleList.eq(index).addClass("cur").siblings().removeClass("cur");
+				});
+			};
+		</script>
+		<style type="text/css">
+			.carousel {
+				width: 560px;
+				height: 300px;
+				border: 1px solid #9c9c9c;
+				position: relative;
+				margin: 50px auto;
+				overflow: hidden;//超过div的部分隐藏
+			}
+			.carousel ul#unit {
+				list-style: none;
+				width: 5000px;
+				position: relative;
+			}
+			.carousel ul li {
+				float: left;
+			}
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			.carousel .btns a {
+				position: absolute;
+				width: 30px;
+				height: 70px;
+				top: 50%;
+				margin-top: -35px;
+				background-color: rgb(0, 0, 0);
+				text-align: center;
+				font-size: 24px;
+				color: white;
+				font-family: serif;
+				line-height: 70px;
+				text-decoration: none;
+				border-radius: 4px;
+			}
+			.carousel .btns a.leftBtn {
+				left: 10px;
+			}
+			.carousel .btns a.rightBtn {
+				right: 10px;
+			}
+			.circles {
+				position: absolute;
+				width: 120px;
+				height: 20px;
+				bottom: 10px;
+				left: 50%;
+				margin-left: -60px;
+			}
+			.circles ol {
+				list-style: none;
+			}
+			.circles ol li {
+				float: left;
+				width: 16px;
+				height: 16px;
+				background-color: white;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+			.circles ol li.cur {
+				background-color: red;
+			}
+			.circles ol li.last {
+				margin-right: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="carousel" id="carousel">
+			<!-- 轮播图 -->
+			<ul id="unit">
+				<li>
+					<a href="">
+						<img src="img/0.jpg"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/1.jpg"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/2.jpg"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/3.jpg"/>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/4.jpg"/>
+					</a>
+				</li>
+			</ul>
+			<!-- 左右按钮 -->
+			<div class="btns">
+				<a id="leftBtn" class="leftBtn" href="javascript:void(0)">&lt;</a>
+				<a id="rightBtn" class="rightBtn" href="javascript:void(0)">&gt;</a>
+			</div>
+			<!-- 选择圆圈列表 -->
+			<div class="circles" id="circles">
+				<ol>
+					<li class="cur"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li class="last"></li>
+				</ol>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.6.3.js"></script>
+		<script>
+			// animate()：动画{json},时间
+			$(document).ready(function(){
+				//div设置动画
+				$("#div1").animate({
+					// json
+					"width": "100px",
+					"height":"100px",
+					"left": "500px",
+					"border-radius": "50%",
+					"opacity": "0.5",
+				},1000,function(){
+					//回调函数：等待animate执行完毕后再执行函数
+					$("#div1").css({"background-color": "red",});//先移动动画再变颜色
+				});
+				
+				
+				//循环
+				var index = 0;
+				for(var i = 1;i <= 7;i++){
+					$("div").eq(index).animate({
+						"width": "100px",
+						"height":"100px",
+						"left": "500px",
+						"border-radius": "50%",
+						"opacity": "0.5",
+					},i*500);
+					index++;
+				}
+			});
+		</script>
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: green;
+			
+				/* 相对定位 */
+				position: relative;
+				margin: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<div id="div4"></div>
+		<div id="div5"></div>
+		<div id="div6"></div>
+		<div id="div7"></div>
+	</body>
+</html>
