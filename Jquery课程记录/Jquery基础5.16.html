@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>交叉淡入淡出轮播</title>
+		<script src="js/jquery-3.6.3.js" type="text/javascript"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.carousel {
+				width: 650px;
+				height: 360px;
+				margin: 100px auto;
+				position: relative;
+				overflow: hidden;//超过div的部分隐藏
+
+			}
+
+			.carousel .carousel_images .unit {
+				list-style: none;
+				width: 520px;
+				height: 280px;
+				position: relative;
+			}
+
+			.carousel .carousel_images .unit li {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 520px;
+				height: 280px;
+				display: none;
+			}
+
+			.carousel .carousel_images .unit li.first {
+				display: block;
+			}
+
+			.carousel .carousel_nav {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 123px;
+				height: 24px;
+			}
+
+			.carousel .carousel_nav ol {
+				list-style: none;
+			}
+
+			.carousel .carousel_nav ol li {
+				float: left;
+				width: 16px;
+				height: 16px;
+				margin-right: 6px;
+				border-radius: 50%;
+				background-color: #eee;
+				opacity: 0.6;
+			}
+
+			.carousel .carousel_nav ol li.cur {
+				background: darkred;
+			}
+
+			.carousel .carousel_btns .btn {
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				border-radius: 20%;
+				background-color: #ffd700;
+				text-align: center;
+				line-height: 40px;
+				font-size: 30px;
+				font-family: serif;
+				text-decoration: none;
+				color: #333;
+				font-weight: bold;
+			}
+
+			.carousel .carousel_btns .btn.left {
+				top: 50%;
+				left: 10px;
+				margin-top: -20px;
+
+			}
+
+			.carousel .carousel_btns .btn.right {
+				top: 50%;
+				right: 10px;
+				margin-top: -20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="carousel_images" id="carousel">
+			<!-- 轮播图 -->
+			<ul class="unit">
+				<li class="first">
+					<a href="">
+						<img src="img2/0.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img2/1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img2/2.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img2/3.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img2/4.jpg" />
+					</a>
+				</li>
+			</ul>
+			<!-- 左右按钮 -->
+			<div class="carousel_btns">
+				<a id="leftBtn" class="btn left" href="javascript:void(0)">&lt;</a>
+				<a id="rightBtn" class="btn right" href="javascript:void(0)">&gt;</a>
+			</div>
+			<!-- 选择圆圈列表 -->
+			<div class="carousel_nav" id="circles">
+				<ol>
+					<li class="cur"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li class="last"></li>
+				</ol>
+			</div>
+		</div>
+		<script>
+			
+		</script>
+	</body>
+</html>

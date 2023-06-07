@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>异形滚动</title>
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+	<!-- 大盒子 -->
+	<div class="carousel">
+		<!-- 第一个小盒子，用来存放图片 -->
+		<div class="carousel_images">
+			<ul>
+				<li  >
+					<img src="images/0.jpg">
+					<div class="mask"></div>
+				</li>
+				<li>
+					<img src="images/1.jpg" alt="">
+					<div class="mask"></div>
+				</li>
+				<li>
+					<img src="images/2.jpg" alt="">
+					<div class="mask"></div>
+				</li>
+				<li>
+					<img src="images/3.jpg" alt="">
+					<div class="mask"></div>
+				</li>
+				<li>
+					<img src="images/4.jpg" alt="">
+					<div class="mask"></div>
+				</li>
+				<li>
+					<img src="images/5.jpg" alt="">
+					<div class="mask"></div>
+				</li>
+				<li>
+					<img src="images/6.jpg" alt="">
+					<div class="mask"></div>
+				</li>
+				<li>
+					<img src="images/7.jpg" alt="">
+					<div class="mask"></div>
+				</li>
+				<li>
+					<img src="images/8.jpg" alt="">
+					<div class="mask"></div>
+				</li>
+				<li>
+					<img src="images/9.jpg" alt="">
+					<div class="mask"></div>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- 第二个小盒子，用来存放按钮 -->
+		<div class="carousel_btns">
+			<a href="javascript:;" class="right_btn"></a>
+			<a href="javascript:;" class="left_btn"></a>
+		</div>
+		
+		<!-- 第三个小盒子，用来存放小圆点 -->
+		<div class="circles">
+			<ol>
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+		
+	</div>
+	
+	
+	
+	<script type="text/javascript" src="jslib/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		var posObj = {
+			A : {"width":257,"height":143,"left":-134,"top":164,"opacity":0},
+			B : {"width":513,"height":285,"left":0,"top":93,"opacity":1},
+			C : {"width":800,"height":445,"left":200,"top":0,"opacity":1},
+			D : {"width":513,"height":285,"left":687,"top":93,"opacity":1},
+			E : {"width":257,"height":143,"left":1060,"top":164,"opacity":0}
+		}
+		var posArr = [
+			posObj.C,
+			posObj.D,
+			posObj.E,
+			posObj.E,
+			posObj.E,
+			posObj.E,
+			posObj.E,
+			posObj.E,
+			posObj.A,
+			posObj.B,
+		];
+		
+		var zindexArr = [3,2,1,1,1,1,1,1,1,2];
+		
+		var maskArr = [0,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4];
+		
+		//调用函数，设置初始值
+		setEveryLiByArr();
+		
+		//信号量，信号量表示当前第几张图图居中，信号量不驱动大图动画，只驱动小圆点
+		var idx = 0;
+		
+		var god = false;
+		
+		
+		
+		
+		
+	</script>
+</body>
+</html>

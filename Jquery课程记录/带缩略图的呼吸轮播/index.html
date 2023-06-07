@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播图</title>
+
+		<link rel="stylesheet" href="css/css.css">
+
+	</head>
+	<body>
+		<div class="carousel" id="carousel">
+
+			<div class="carousel_images">
+				<ul>
+					<li class="first">
+						<a href="">
+							<img src="images/0.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/4.jpg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="small_nav">
+				<h3>贵州：崛起中的大数据产业</h3>
+				<div class="inner">
+					<a href="javascript:;" class="left_btn"></a>
+					<div class="small_nav_pics">
+						<ul class="small_nav_unit">
+							<li class="cur" data-title="贵州：崛起中的大数据产业">
+								<a href="javascirpt:;">
+									<img src="images/small/0.jpg" alt="">
+								</a>
+							</li>
+							<li data-title="捕捉光影 感受微距镜头下的童话世界">
+								<a href="javascirpt:;">
+									<img src="images/small/1.jpg" alt="">
+								</a>
+							</li>
+							<li data-title="烈日下机车“体检”保暑运">
+								<a href="javascirpt:;">
+									<img src="images/small/2.jpg" alt="">
+								</a>
+							</li>
+							<li data-title="为古籍看“病”">
+								<a href="javascirpt:;">
+									<img src="images/small/3.jpg" alt="">
+								</a>
+							</li>
+							<li data-title="平潭海峡公铁大桥进入主航道桥钢梁架设施工阶段">
+								<a href="javascirpt:;">
+									<img src="images/small/4.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="javascript:;" class="right_btn"></a>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<script type="text/javascript" src="jslib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			//得到大盒子
+			var $carousel = $("#carousel");
+			//得到按钮
+			var $right_btn = $carousel.find(".right_btn");
+			var $left_btn = $carousel.find(".left_btn");
+			//得到unit组合体
+			var $small_nav_unit = $carousel.find(".small_nav_unit");
+			//得到h3盒子
+			var $small_nav_h3 = $carousel.find("h3");
+			//克隆
+			$small_nav_unit.find("li ").clone().appendTo($small_nav_unit); 
+			//得到组合体中的小图
+			var $small_nav_unit_lis = $carousel.find(".small_nav_unit li");
+			//得到图片i
+			var $carousel_images_lis = $carousel.find(".carousel_images li");
+			//信号量,哪张图片正在显示
+			var idx = 0;
+			I
+			//信号量,哪个小图排第1
+			var small_nav_idx = 0;
+			//右按钮的监听
+			$right_btn.click(function() {
+					//验证如果当前正在运动,忽路这次点击
+					if ($small_nav_unit.is(":animated")) return;
+					//套路:
+					small_nav_idx ++;
+					$small_nav_unit.animate({"left": -114 * small_nav_idx}, 300, function() {
+						//回调函数中判断是否到头
+						if (small_nav_idx > 4) {
+							small_nav_idx = 0;
+							$(this).css("left", 0);
+							}
+					});
+			});
+			$left_btn.click(function() {
+					//验证如果当前正在运动,忽路这次点击
+					if ($small_nav_unit.is(":animated")) return;
+					//套路:
+					small_nav_idx --;
+					if (small_nav_idx < 0) {
+						small_nav_idx = 4;
+						$($small_nav_unit).css("left", -114 * 5);
+						}
+					$small_nav_unit.animate({"left": -114 * small_nav_idx}, 300);
+			});
+			
+			$small_nav_unit_lis.mouseenter(function(){
+				//老图淡出
+				$carousel_images_lis.eq(idx).stop(true).fadeOut();
+				idx = $ (this).index() % 5;
+				$carousel_images_lis.eq(idx).stop(true).fadeIn();
+				$small_nav_unit_lis.removeClass("cur");
+				$small_nav_unit_lis.eq(idx).addClass("cur");
+				$small_nav_unit_lis.eq(idx + 5).addClass("cur");
+				$small_nav_unit_lis.html($(this).data("title"));
+			});
+		</script>
+	</body>
+</html>

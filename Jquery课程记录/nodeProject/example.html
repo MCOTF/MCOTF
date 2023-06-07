@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+			});
+		</script>
+		<style type="text/css">
+			.navigate {
+				width: 1000px;
+				height: 40px;
+				background-color: steelblue;
+				margin: 50px auto;
+			}
+			ul {
+				list-style: none;
+				width: 800px;
+				margin: 0px auto;
+				padding: 0px;
+			}
+			ul li {
+				position: relative;
+				float: left;
+				width: 200px;
+				height: 40px;	/* 容器高度 */
+				line-height: 40px;	/* 行高，和容器高度同时设置可上下居中 */
+				text-align: center;
+			}
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			ul li a {
+				text-decoration: none;
+				color: white;
+			}
+			.dropbox {
+				/* position: absolute;
+				top: 40px;
+				left: 0px; */
+				width: 200px;
+				background-color: #99CCFF;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navigate">
+			<ul>
+				<li>
+					<a href="#">网站首页</a>
+				</li>
+				<li>
+					<a href="#">学院介绍</a>
+					<div class="dropbox">
+						<p><a href="#">学院简介</a></p>
+						<p><a href="#">学校领导</a></p>
+						<p><a href="#">校园校训</a></p>
+					</div>
+				</li>
+				<li>
+					<a href="#">管理机构</a>
+				</li>
+				<li>
+					<a href="#">教学机构</a>
+					<div class="dropbox">
+						<p><a href="#">旅游管理系</a></p>
+						<p><a href="#">信息工程系</a></p>
+						<p><a href="#">经济管理系</a></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
