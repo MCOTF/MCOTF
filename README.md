@@ -4,44 +4,16 @@
 <img src="SQL查询课程记录/MCOTF-01.png"/> 
 </p>
 
->```使用方法：文件-导入-从Git导入，或者你直接复制代码也行。代码有问题再来找我，其他的我不管，对我来说教小白是一件麻烦高血压且不讨好的事情。```
+>```对我来说教小白是一件麻烦高血压且不讨好的事情。```
 > ——《MCOTF__ST》
 
 #### 介绍
--	本仓库用来记录在各学科课程中学习的代码，供大伙参考学习，一起进步。
 -	如有需要可按**Ctrl+D**收藏此页，之后的代码会在此持续更新。
 -	商业合作请直接联系我。如有其他疑问则提交Issue，非商业合作切勿向QQ或微信提问，任何干扰我时间的行为一概不回。
-
-#### 本仓库内容
-
--	目前共三个文件夹，点击括号内容可直接打开，其他文件请忽视。
--	**[[Java课程记录]](https://gitee.com/MCOTF/course-code/tree/master/Java%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95)**:涵盖了java的一些基础代码，从HelloWorld到构造方法均有案例代码。
-- 	**[[SQL查询课程记录]](https://gitee.com/MCOTF/course-code/tree/master/SQL%E6%9F%A5%E8%AF%A2%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95)**:以SSMS平台编写的适用于SQL Server的查询代码，理论也可在MySQL等平台使用
--	**[[HTML&CSS&Javascript课程记录]](https://gitee.com/MCOTF/course-code/tree/master/HTML&CSS&Javascript%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95)**:通常为各种HTML实例，一般会有部分行内式与内嵌式CSS代码，后期会跟进Javascript。
-- 	本学期新增PHP课程记录，JSP课程记录，jQuery课程记录，安卓范例则放在了另一个仓库里
-- 	
-
-#### 软件下载
-
--   [Java Development Kit 8(JDK8)](https://www.oracle.com/java/technologies/downloads/#java8)
-	-   [Eclipse](https://www.eclipse.org/downloads/)
-	-   [intellJ IDEA](https://www.jetbrains.com/zh-cn/idea/download/#section=windows)
-		-   [Apache Tomcat 10](https://tomcat.apache.org/download-10.cgi)
--   [HbuilderX](https://dcloud.io/hbuilderx.html)
-	-   [jQuery](https://jquery.com/download/)
--   [Python IDE](https://www.python.org/downloads/)
--   [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
-
--   [XAMPP](https://www.apachefriends.org/zh_cn/index.html)
 
 #### 推荐链接
 -	[我的B站主页](https://space.bilibili.com/19200133)
 -	[我的爱发电主页](https://afdian.net/a/mcotf)
--	[菜鸟教程](https://www.runoob.com/)
--	[安装并使用eclipse](https://zhuanlan.zhihu.com/p/146333721)
--	[安装并使用hbuilderx](https://zhuanlan.zhihu.com/p/131649354)
--	[XAMPP部署教程](https://blog.csdn.net/yang_yang_heng/article/details/108521727)
--	[建立IDEA Java Web项目](https://blog.csdn.net/yuyunbai0917/article/details/122823288)
 
 #### 使用说明
 
